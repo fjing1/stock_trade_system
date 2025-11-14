@@ -76,7 +76,7 @@ def update_stock_history(history, symbol, score, category):
             del history[symbol][old_date]
 
 def is_new_strong_buy(history, symbol, current_score):
-    """判断是否为新的强买入信号"""
+    """判断是否为新的强买入信号 (增强版阈值)"""
     if symbol not in history:
         return True  # 第一次出现就是新的
     
@@ -91,19 +91,19 @@ def is_new_strong_buy(history, symbol, current_score):
     recent_dates = sorted(recent_records.keys())[-5:]  # 最近5天
     
     for date in recent_dates:
-        if recent_records[date].get('score', 0) >= 85:
+        if recent_records[date].get('score', 0) >= 95:  # 调整为95分阈值
             return False  # 最近5天内已经是强买入了
     
-    return current_score >= 85  # 当前是强买入且最近5天不是
+    return current_score >= 95  # 当前是强买入且最近5天不是 (调整为95分)
 
 def categorize_stock(score, is_new):
-    """根据评分和是否新出现来分类股票"""
-    if score >= 85:
+    """根据评分和是否新出现来分类股票 (增强版阈值)"""
+    if score >= 95:  # 调整为95分 (原85分 + 10分周线确认)
         if is_new:
             return "🔥 新强买入"  # 最佳买入时机
         else:
             return "⭐ 强买入"    # 持续强买入
-    elif score >= 70:
+    elif score >= 80:  # 调整为80分 (原70分 + 10分增强过滤)
         return "✅ 买入"
     else:
         return None
@@ -168,6 +168,38 @@ def get_stock_data_raw(symbol):
         return data
     except Exception as e:
         return None
+
+def get_weekly_trend_score(symbol):
+    """获取周线趋势确认分数 (Multi-Timeframe Confirmation)"""
+    try:
+        # 下载3个月的周线数据 (更可靠的数据范围)
+        weekly_data = yf.download(symbol, period="3mo", interval="1wk",
+                                auto_adjust=False, progress=False)
+        
+        if weekly_data is None or len(weekly_data) < 10:
+            return 0
+        
+        # 计算周线MA20
+        weekly_close = weekly_data["Close"]
+        weekly_ma20 = weekly_close.rolling(20).mean()
+        
+        current_price = float(weekly_close.iloc[-1])
+        weekly_ma20_val = float(weekly_ma20.iloc[-1]) if not pd.isna(weekly_ma20.iloc[-1]) else 0
+        
+        # 周线趋势确认
+        if weekly_ma20_val > 0 and current_price > weekly_ma20_val:
+            # 额外检查：周线MA20是否上升
+            if len(weekly_ma20) >= 2:
+                prev_weekly_ma20 = float(weekly_ma20.iloc[-2]) if not pd.isna(weekly_ma20.iloc[-2]) else 0
+                if weekly_ma20_val > prev_weekly_ma20:
+                    return 10  # 强势周线趋势
+                else:
+                    return 5   # 一般周线趋势
+            return 5
+        
+        return 0
+    except Exception:
+        return 0  # 如果获取周线数据失败，不影响主要评分
 
 def get_stock_data(symbol):
     """主要的数据获取函数，使用缓存"""
@@ -255,7 +287,7 @@ def build_etf_overview(df, symbol):
     return snapshot
 
 def score_stock(df):
-    # 统一取“最后一行”的各字段为标量，避免 Series 间比较
+    # 统一取"最后一行"的各字段为标量，避免 Series 间比较
     def last_val(s, default=np.nan):
         try:
             v = s.iloc[-1]
@@ -278,6 +310,7 @@ def score_stock(df):
 
     score = 0
 
+    # ============ 原有评分系统 (100分) ============
     # 趋势动能 40%
     if pd.notna(close) and pd.notna(ma20) and close > ma20:
         score += 10
@@ -314,10 +347,64 @@ def score_stock(df):
     if pd.notna(vol_ratio) and vol_ratio < 3:
         score += 10
 
+    # ============ 增强质量过滤器 (Option 1) ============
+    # 1. 价格动量一致性 (最近5天趋势)
+    if len(df["Close"]) >= 5:
+        recent_closes = df["Close"].tail(5)
+        if recent_closes.iloc[-1] > recent_closes.iloc[0]:  # 5天上涨趋势
+            score += 5
+
+    # 2. 成交量确认 (最近3天 vs 历史平均)
+    if len(df["Volume"]) >= 10:
+        recent_vol = df["Volume"].tail(3).mean()
+        historical_vol = df["Volume"].tail(20).head(17).mean()
+        if pd.notna(recent_vol) and pd.notna(historical_vol) and historical_vol > 0:
+            if recent_vol > historical_vol * 1.15:  # 15%成交量增加
+                score += 5
+
+    # 3. RSI最佳区间 (避免极端值)
+    if pd.notna(rsi) and 35 <= rsi <= 65:  # RSI最佳区间
+        score += 5
+
+    # 4. 均线排列确认 (MA20 > MA50 多头排列)
+    if pd.notna(ma20) and pd.notna(ma50) and ma20 > ma50 > 0:
+        score += 5
+
+    # 5. 波动率控制 (避免过度波动)
+    if len(df["Close"]) >= 20:
+        returns = df["Close"].pct_change().dropna().tail(20)
+        if len(returns) > 0:
+            volatility = returns.std()
+            if volatility <= 0.04:  # 日波动率 ≤ 4%
+                score += 5
+
+    # 6. 价格位置确认 (在近期区间的上半部)
+    if len(df["Close"]) >= 20:
+        recent_prices = df["Close"].tail(20)
+        recent_high = recent_prices.max()
+        recent_low = recent_prices.min()
+        if recent_high > recent_low:  # 避免除零
+            position_in_range = (close - recent_low) / (recent_high - recent_low)
+            if position_in_range >= 0.6:  # 在区间上40%位置
+                score += 5
+
     # 返回评分、RSI、量比（四舍五入）
     rsi_out = (None if pd.isna(rsi) else round(rsi, 1))
     volr_out = (None if pd.isna(vol_ratio) else round(vol_ratio, 2))
     return round(score, 1), rsi_out, volr_out
+
+def score_stock_with_weekly(df, symbol):
+    """增强版评分函数，包含周线确认"""
+    # 获取日线评分
+    daily_score, rsi_out, volr_out = score_stock(df)
+    
+    # 获取周线趋势确认分数 (Option 4)
+    weekly_score = get_weekly_trend_score(symbol)
+    
+    # 合并评分 (最高140分)
+    total_score = daily_score + weekly_score
+    
+    return round(total_score, 1), rsi_out, volr_out
 
 
 # ============ 主逻辑（优化版本 + 历史跟踪）============
@@ -409,8 +496,8 @@ for batch_idx in range(total_batches):
                     except Exception as e_snap:
                         print(f"{symbol} ETF概览生成失败: {e_snap}")
 
-                # 评分与选股
-                score, rsi_val, vol_ratio = score_stock(df)
+                # 评分与选股 (使用增强版评分系统)
+                score, rsi_val, vol_ratio = score_stock_with_weekly(df, symbol)
                 close_val = float(df["Close"].iloc[-1])
                 prev_close = float(df["Close"].iloc[-2])
                 change = (close_val / prev_close - 1.0) * 100.0
@@ -419,11 +506,11 @@ for batch_idx in range(total_batches):
                 is_new = is_new_strong_buy(scan_history, symbol, score)
                 category = categorize_stock(score, is_new)
                 
-                # 更新历史记录
-                if score >= 70:  # 只记录合格的股票
+                # 更新历史记录 (调整为80分阈值)
+                if score >= 80:  # 只记录合格的股票 (调整阈值)
                     update_stock_history(scan_history, symbol, score, category)
                 
-                if score >= 70:
+                if score >= 80:  # 调整合格分数线
                     qualified_count += 1
                     if category == "🔥 新强买入":
                         new_strong_buy_count += 1
@@ -437,15 +524,15 @@ for batch_idx in range(total_batches):
                         "成交量/均量比": vol_ratio,
                         "策略评分": score,
                         "评级": category,
-                        "是否新出现": "是" if is_new and score >= 85 else "否"
+                        "是否新出现": "是" if is_new and score >= 95 else "否"
                     })
                     
                     # 实时显示高分股票（优先显示新强买入）
                     if category == "🔥 新强买入":
                         print(f"🔥 发现新强买入: {symbol} (评分: {score}) - 最佳买入时机!")
-                    elif score >= 85:
+                    elif score >= 95:  # 调整强买入阈值
                         print(f"⭐ 发现强买入: {symbol} (评分: {score})")
-                    elif score >= 80:
+                    elif score >= 90:  # 调整显示阈值
                         print(f"✅ 发现买入: {symbol} (评分: {score})")
 
             except Exception as e:
@@ -478,8 +565,8 @@ print(f"   - 成功处理: {processed_count}")
 print(f"   - 数据错误: {error_count}")
 print(f"   - 合格标的: {qualified_count}")
 print(f"   - 🔥 新强买入: {new_strong_buy_count} (最佳买入时机!)")
-print(f"   - ⭐ 强买入(≥85分): {len([r for r in results if r['策略评分'] >= 85 and r['评级'] != '🔥 新强买入'])}")
-print(f"   - ✅ 买入(70-84分): {len([r for r in results if 70 <= r['策略评分'] < 85])}")
+print(f"   - ⭐ 强买入(≥95分): {len([r for r in results if r['策略评分'] >= 95 and r['评级'] != '🔥 新强买入'])}")
+print(f"   - ✅ 买入(80-94分): {len([r for r in results if 80 <= r['策略评分'] < 95])}")
 print(f"   - 总用时: {total_time/60:.1f}分钟")
 print(f"   - 平均速度: {processed_count/(total_time/60):.1f}个/分钟")
 print("=" * 50)
@@ -494,7 +581,7 @@ empty_cols_pick = ["类别","代码","收盘价","涨跌幅 %","RSI","成交量/
 empty_pick_df = pd.DataFrame(columns=empty_cols_pick)
 
 if df_result.empty:
-    print("暂无满足条件（评分≥70）的标的，将导出空模板。")
+    print("暂无满足条件（评分≥80）的标的，将导出空模板。")
     df_result_sorted = empty_pick_df.copy()
 else:
     df_result_sorted = df_result.sort_values(by="策略评分", ascending=False)
@@ -506,8 +593,8 @@ etf_df   = df_result_sorted[df_result_sorted["类别"] == "ETF"]
 # 各自拆分新强买入/强买入/买入
 def split_tables(sub_df):
     new_strong_buy = sub_df[sub_df["评级"] == "🔥 新强买入"]
-    strong_buy = sub_df[(sub_df["策略评分"] >= 85) & (sub_df["评级"] != "🔥 新强买入")]
-    buy = sub_df[(sub_df["策略评分"] >= 70) & (sub_df["策略评分"] < 85)]
+    strong_buy = sub_df[(sub_df["策略评分"] >= 95) & (sub_df["评级"] != "🔥 新强买入")]
+    buy = sub_df[(sub_df["策略评分"] >= 80) & (sub_df["策略评分"] < 95)]
     return new_strong_buy, strong_buy, buy
 
 if not stock_df.empty:
@@ -607,6 +694,6 @@ if not df_result_sorted.empty:
     print(f"\n🏆 前10个最佳投资机会:")
     print("=" * 90)
     for i, (_, row) in enumerate(df_result_sorted.head(10).iterrows()):
-        rating_emoji = "🔥" if row['评级'] == '🔥 新强买入' else ("⭐" if row['策略评分'] >= 85 else "✅")
+        rating_emoji = "🔥" if row['评级'] == '🔥 新强买入' else ("⭐" if row['策略评分'] >= 95 else "✅")
         print(f"{rating_emoji} {row['代码']:>6} | {row['类别']:>3} | {row['策略评分']:>5.1f}分 | ${row['收盘价']:>8.2f} | {row['涨跌幅 %']:>6.1f}%")
 
