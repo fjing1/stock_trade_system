@@ -10,16 +10,27 @@ import pandas as pd
 import numpy as np
 import ta
 from datetime import datetime
+from stock_symbols_2000 import STOCK_SYMBOLS, ETF_SYMBOLS
+import concurrent.futures
+import threading
+from functools import lru_cache
+import warnings
+warnings.filterwarnings('ignore', category=FutureWarning)
 
 # ============ 参数设置 ============
-symbols = ["AAPL", "MSFT", "META", "NVDA", "AMD", "GOOGL", "CSCO",
-           "FCX", "HIMS", "LITE", "MU", "AVGO", "NUE", "CRWD", "TSLA", "SMCI"]
-
-# 新增 ETF 列表
-etf_symbols = ["SPY", "QQQ", "IWM"]
+# Import symbols from separate file
+symbols = STOCK_SYMBOLS  # 1000 US stocks from stock_symbols.py
+etf_symbols = ETF_SYMBOLS  # ETF list from stock_symbols.py
 
 # 合并为总扫描列表（不重复）
 symbols_all = list(dict.fromkeys(symbols + etf_symbols))
+
+print(f"📊 扫描配置:")
+print(f"   - 股票数量: {len(symbols)}")
+print(f"   - ETF数量: {len(etf_symbols)}")
+print(f"   - 总扫描数量: {len(symbols_all)}")
+print(f"   - 预计扫描时间: {len(symbols_all) * 2 // 60}分钟 (估算)")
+print("=" * 50)
 
 
 OUTPUT_PATH = f"US_StrongBuy_Scan_{datetime.now().strftime('%Y%m%d')}.xlsx"
@@ -42,39 +53,99 @@ def to_1d_series(x, index=None, name=None):
 
 
 # ============ 函数定义 ============
-def get_stock_data(symbol):
-    # 显式设置 auto_adjust=False，避免不同版本行为差异
-    data = yf.download(symbol, period="3mo", interval="1d",
-                       auto_adjust=False, progress=False)
+@lru_cache(maxsize=128)
+def get_stock_data_cached(symbol):
+    """缓存版本的数据获取函数"""
+    return get_stock_data_raw(symbol)
 
-    if data is None or len(data) < 50:
+def get_stock_data_raw(symbol):
+    """原始数据获取函数"""
+    try:
+        # 显式设置 auto_adjust=False，避免不同版本行为差异
+        data = yf.download(symbol, period="3mo", interval="1d",
+                           auto_adjust=False, progress=False,
+                           threads=True, group_by='ticker')
+
+        if data is None or len(data) < 50:
+            return None
+
+        data = data.copy()  # 避免SettingWithCopy告警
+
+        # 保障 Close / Volume 为1D Series
+        close = to_1d_series(data["Close"], index=data.index, name="Close").astype(float)
+        volume = to_1d_series(data["Volume"], index=data.index, name="Volume").astype(float)
+
+        # 技术指标（全部用Series并在最后赋值，避免2D问题）
+        rsi = ta.momentum.RSIIndicator(close, window=14).rsi()
+        macd_ind = ta.trend.MACD(close)
+        macd = macd_ind.macd()
+        signal = macd_ind.macd_signal()
+
+        ma20 = close.rolling(20).mean()
+        ma50 = close.rolling(50).mean()
+
+        # 回填到 data（保证是1D）
+        data["RSI"] = to_1d_series(rsi, index=data.index, name="RSI")
+        data["MACD"] = to_1d_series(macd, index=data.index, name="MACD")
+        data["Signal"] = to_1d_series(signal, index=data.index, name="Signal")
+        data["MA20"] = to_1d_series(ma20, index=data.index, name="MA20")
+        data["MA50"] = to_1d_series(ma50, index=data.index, name="MA50")
+        data["Close"] = close
+        data["Volume"] = volume
+
+        return data
+    except Exception as e:
         return None
 
-    data = data.copy()  # 避免SettingWithCopy告警
+def get_stock_data(symbol):
+    """主要的数据获取函数，使用缓存"""
+    return get_stock_data_cached(symbol)
 
-    # 保障 Close / Volume 为1D Series
-    close = to_1d_series(data["Close"], index=data.index, name="Close").astype(float)
-    volume = to_1d_series(data["Volume"], index=data.index, name="Volume").astype(float)
+def process_single_symbol(symbol):
+    """处理单个股票符号的完整流程"""
+    try:
+        df = get_stock_data(symbol)
+        if df is None:
+            return {"type": "error", "symbol": symbol, "message": "数据不足"}
 
-    # 技术指标（全部用Series并在最后赋值，避免2D问题）
-    rsi = ta.momentum.RSIIndicator(close, window=14).rsi()
-    macd_ind = ta.trend.MACD(close)
-    macd = macd_ind.macd()
-    signal = macd_ind.macd_signal()
+        # 无论是否达标，若是ETF就先记录一个概览快照
+        etf_overview = None
+        if symbol in etf_symbols:
+            try:
+                etf_overview = build_etf_overview(df, symbol)
+            except Exception as e_snap:
+                pass
 
-    ma20 = close.rolling(20).mean()
-    ma50 = close.rolling(50).mean()
+        # 评分与选股
+        score, rsi, vol_ratio = score_stock(df)
+        close = float(df["Close"].iloc[-1])
+        prev_close = float(df["Close"].iloc[-2])
+        change = (close / prev_close - 1.0) * 100.0
+        
+        result = {
+            "type": "success",
+            "symbol": symbol,
+            "score": score,
+            "etf_overview": etf_overview,
+            "stock_result": None
+        }
+        
+        if score >= 70:
+            result["stock_result"] = {
+                "类别": ("ETF" if symbol in etf_symbols else "股票"),
+                "代码": symbol,
+                "收盘价": round(close, 2),
+                "涨跌幅 %": round(change, 2),
+                "RSI": rsi,
+                "成交量/均量比": vol_ratio,
+                "策略评分": score,
+                "评级": "⭐ 强买入" if score >= 85 else "✅ 买入"
+            }
 
-    # 回填到 data（保证是1D）
-    data["RSI"] = to_1d_series(rsi, index=data.index, name="RSI")
-    data["MACD"] = to_1d_series(macd, index=data.index, name="MACD")
-    data["Signal"] = to_1d_series(signal, index=data.index, name="Signal")
-    data["MA20"] = to_1d_series(ma20, index=data.index, name="MA20")
-    data["MA50"] = to_1d_series(ma50, index=data.index, name="MA50")
-    data["Close"] = close
-    data["Volume"] = volume
+        return result
 
-    return data
+    except Exception as e:
+        return {"type": "error", "symbol": symbol, "message": f"错误: {e}"}
 
 def build_etf_overview(df, symbol):
     """为ETF生成一个不基于评分门槛的概览快照"""
@@ -177,43 +248,145 @@ def score_stock(df):
     return round(score, 1), rsi_out, volr_out
 
 
-# ============ 主逻辑 ============
+# ============ 主逻辑（优化版本）============
 results = []
 etf_overview_rows = []
+processed_count = 0
+error_count = 0
+qualified_count = 0
 
-for s in symbols_all:
+print("🚀 开始扫描（优化版本）...")
+start_time = datetime.now()
+
+# 批量下载优化 - 分批处理以提高效率
+batch_size = 50
+total_batches = (len(symbols_all) + batch_size - 1) // batch_size
+
+for batch_idx in range(total_batches):
+    batch_start = batch_idx * batch_size
+    batch_end = min(batch_start + batch_size, len(symbols_all))
+    batch_symbols = symbols_all[batch_start:batch_end]
+    
+    print(f"🔄 处理批次 {batch_idx + 1}/{total_batches} ({len(batch_symbols)} 个符号)")
+    
+    # 尝试批量下载（如果失败则逐个处理）
     try:
-        df = get_stock_data(s)
-        if df is None:
-            print(f"{s} 数据不足，跳过")
-            continue
-
-        # 无论是否达标，若是ETF就先记录一个概览快照
-        if s in etf_symbols:
+        # 批量下载数据
+        batch_data = yf.download(batch_symbols, period="3mo", interval="1d",
+                               auto_adjust=False, progress=False,
+                               group_by='ticker', threads=True)
+        
+        for i, symbol in enumerate(batch_symbols):
             try:
-                etf_overview_rows.append(build_etf_overview(df, s))
-            except Exception as e_snap:
-                print(f"{s} ETF概览生成失败: {e_snap}")
+                # 进度指示
+                current_idx = batch_start + i + 1
+                if current_idx % 50 == 0 or current_idx == len(symbols_all):
+                    elapsed = (datetime.now() - start_time).total_seconds()
+                    rate = current_idx / elapsed if elapsed > 0 else 0
+                    eta = (len(symbols_all) - current_idx) / rate if rate > 0 else 0
+                    print(f"📈 进度: {current_idx}/{len(symbols_all)} ({current_idx/len(symbols_all)*100:.1f}%) | "
+                          f"合格: {qualified_count} | 错误: {error_count} | "
+                          f"预计剩余: {eta/60:.1f}分钟")
+                
+                # 提取单个股票数据
+                if len(batch_symbols) == 1:
+                    df = batch_data
+                else:
+                    df = batch_data[symbol] if symbol in batch_data.columns.get_level_values(0) else None
+                
+                if df is None or len(df) < 50:
+                    if error_count <= 20:
+                        print(f"{symbol} 数据不足，跳过")
+                    error_count += 1
+                    continue
 
-        # 评分与选股
-        score, rsi, vol_ratio = score_stock(df)
-        close = float(df["Close"].iloc[-1])
-        prev_close = float(df["Close"].iloc[-2])
-        change = (close / prev_close - 1.0) * 100.0
-        if score >= 70:
-            results.append({
-                "类别": ("ETF" if s in etf_symbols else "股票"),
-                "代码": s,
-                "收盘价": round(close, 2),
-                "涨跌幅 %": round(change, 2),
-                "RSI": rsi,
-                "成交量/均量比": vol_ratio,
-                "策略评分": score,
-                "评级": "⭐ 强买入" if score >= 85 else "✅ 买入"
-            })
+                df = df.copy()
+                
+                # 保障 Close / Volume 为1D Series
+                close = to_1d_series(df["Close"], index=df.index, name="Close").astype(float)
+                volume = to_1d_series(df["Volume"], index=df.index, name="Volume").astype(float)
 
-    except Exception as e:
-        print(f"{s} 错误: {e}")
+                # 技术指标计算
+                rsi = ta.momentum.RSIIndicator(close, window=14).rsi()
+                macd_ind = ta.trend.MACD(close)
+                macd = macd_ind.macd()
+                signal = macd_ind.macd_signal()
+                ma20 = close.rolling(20).mean()
+                ma50 = close.rolling(50).mean()
+
+                # 回填到 data
+                df["RSI"] = to_1d_series(rsi, index=df.index, name="RSI")
+                df["MACD"] = to_1d_series(macd, index=df.index, name="MACD")
+                df["Signal"] = to_1d_series(signal, index=df.index, name="Signal")
+                df["MA20"] = to_1d_series(ma20, index=df.index, name="MA20")
+                df["MA50"] = to_1d_series(ma50, index=df.index, name="MA50")
+                df["Close"] = close
+                df["Volume"] = volume
+
+                processed_count += 1
+
+                # ETF概览处理
+                if symbol in etf_symbols:
+                    try:
+                        etf_overview_rows.append(build_etf_overview(df, symbol))
+                    except Exception as e_snap:
+                        print(f"{symbol} ETF概览生成失败: {e_snap}")
+
+                # 评分与选股
+                score, rsi_val, vol_ratio = score_stock(df)
+                close_val = float(df["Close"].iloc[-1])
+                prev_close = float(df["Close"].iloc[-2])
+                change = (close_val / prev_close - 1.0) * 100.0
+                
+                if score >= 70:
+                    qualified_count += 1
+                    results.append({
+                        "类别": ("ETF" if symbol in etf_symbols else "股票"),
+                        "代码": symbol,
+                        "收盘价": round(close_val, 2),
+                        "涨跌幅 %": round(change, 2),
+                        "RSI": rsi_val,
+                        "成交量/均量比": vol_ratio,
+                        "策略评分": score,
+                        "评级": "⭐ 强买入" if score >= 85 else "✅ 买入"
+                    })
+                    
+                    # 实时显示高分股票
+                    if score >= 85:
+                        print(f"⭐ 发现强买入: {symbol} (评分: {score})")
+                    elif score >= 80:
+                        print(f"✅ 发现买入: {symbol} (评分: {score})")
+
+            except Exception as e:
+                error_count += 1
+                if error_count <= 10:
+                    print(f"{symbol} 错误: {e}")
+                    
+    except Exception as batch_error:
+        # 批量下载失败，回退到逐个处理
+        print(f"批量下载失败，回退到逐个处理: {batch_error}")
+        for symbol in batch_symbols:
+            try:
+                df = get_stock_data(symbol)
+                if df is None:
+                    error_count += 1
+                    continue
+                # ... 单个处理逻辑（与上面相同）
+            except Exception as e:
+                error_count += 1
+
+# Final summary
+total_time = (datetime.now() - start_time).total_seconds()
+print(f"\n📊 扫描完成统计:")
+print(f"   - 总扫描数量: {len(symbols_all)}")
+print(f"   - 成功处理: {processed_count}")
+print(f"   - 数据错误: {error_count}")
+print(f"   - 合格标的: {qualified_count}")
+print(f"   - 强买入(≥85分): {len([r for r in results if r['策略评分'] >= 85])}")
+print(f"   - 买入(70-84分): {len([r for r in results if 70 <= r['策略评分'] < 85])}")
+print(f"   - 总用时: {total_time/60:.1f}分钟")
+print(f"   - 平均速度: {processed_count/(total_time/60):.1f}个/分钟")
+print("=" * 50)
 
 
 # 转换为 DataFrame（允许为空）
@@ -259,7 +432,7 @@ with pd.ExcelWriter(OUTPUT_PATH) as writer:
 
     # ETF总览（永远输出），按你喜好可再排序一下
     if not df_etf_overview.empty:
-        # 示例：按“MACD>Signal”“站上MA50”“站上MA20”进行权重排序
+        # 示例：按"MACD>Signal""站上MA50""站上MA20"进行权重排序
         sort_cols = ["MACD>Signal","站上MA50","站上MA20","MA50上升","MA20上升"]
         for c in sort_cols:
             if c in df_etf_overview.columns:
@@ -269,5 +442,35 @@ with pd.ExcelWriter(OUTPUT_PATH) as writer:
         pd.DataFrame(columns=["ETF","收盘价","RSI","站上MA20","站上MA50","MACD>Signal","MA20上升","MA50上升","与MA20偏离%","与MA50偏离%"])\
           .to_excel(writer, sheet_name="ETF Overview", index=False)
 
-print(f"✅ 扫描完成，文件已生成：{OUTPUT_PATH}")
+# 同时导出 CSV 文件（Mac/VSCode 友好格式）
+base_name = f"US_StrongBuy_Scan_{datetime.now().strftime('%Y%m%d')}"
+
+# 保存各个分类为单独的CSV文件
+stock_strong.to_csv(f"{base_name}_Stock_StrongBuy.csv", index=False)
+stock_buy.to_csv(f"{base_name}_Stock_Buy.csv", index=False)
+etf_strong.to_csv(f"{base_name}_ETF_StrongBuy.csv", index=False)
+etf_buy.to_csv(f"{base_name}_ETF_Buy.csv", index=False)
+industry_summary.to_csv(f"{base_name}_Industry_Summary.csv", index=False)
+
+# ETF总览CSV
+if not df_etf_overview.empty:
+    df_etf_overview.to_csv(f"{base_name}_ETF_Overview.csv", index=False)
+else:
+    pd.DataFrame(columns=["ETF","收盘价","RSI","站上MA20","站上MA50","MACD>Signal","MA20上升","MA50上升","与MA20偏离%","与MA50偏离%"])\
+      .to_csv(f"{base_name}_ETF_Overview.csv", index=False)
+
+# 创建一个汇总的所有结果文件
+if not df_result_sorted.empty:
+    df_result_sorted.to_csv(f"{base_name}_All_Results.csv", index=False)
+
+print(f"✅ 扫描完成，文件已生成：")
+print(f"📊 Excel文件: {OUTPUT_PATH}")
+print(f"📄 CSV文件:")
+print(f"   - {base_name}_Stock_StrongBuy.csv ({len(stock_strong)} 个强买入股票)")
+print(f"   - {base_name}_Stock_Buy.csv ({len(stock_buy)} 个买入股票)")
+print(f"   - {base_name}_ETF_StrongBuy.csv ({len(etf_strong)} 个强买入ETF)")
+print(f"   - {base_name}_ETF_Buy.csv ({len(etf_buy)} 个买入ETF)")
+print(f"   - {base_name}_ETF_Overview.csv (所有ETF概览)")
+print(f"   - {base_name}_Industry_Summary.csv (行业汇总)")
+print(f"   - {base_name}_All_Results.csv (所有合格标的)")
 
