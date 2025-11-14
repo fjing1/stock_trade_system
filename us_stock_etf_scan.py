@@ -15,6 +15,8 @@ import concurrent.futures
 import threading
 from functools import lru_cache
 import warnings
+import json
+import os
 warnings.filterwarnings('ignore', category=FutureWarning)
 
 # ============ 参数设置 ============
@@ -34,7 +36,77 @@ print("=" * 50)
 
 
 OUTPUT_PATH = f"US_StrongBuy_Scan_{datetime.now().strftime('%Y%m%d')}.xlsx"
+HISTORY_FILE = "scan_history.json"
 
+
+# ============ 历史跟踪函数 ============
+def load_scan_history():
+    """加载历史扫描记录"""
+    if os.path.exists(HISTORY_FILE):
+        try:
+            with open(HISTORY_FILE, 'r') as f:
+                return json.load(f)
+        except:
+            return {}
+    return {}
+
+def save_scan_history(history):
+    """保存历史扫描记录"""
+    with open(HISTORY_FILE, 'w') as f:
+        json.dump(history, f, indent=2)
+
+def update_stock_history(history, symbol, score, category):
+    """更新单个股票的历史记录"""
+    today = datetime.now().strftime('%Y-%m-%d')
+    
+    if symbol not in history:
+        history[symbol] = {}
+    
+    # 记录今天的评分和类别
+    history[symbol][today] = {
+        'score': score,
+        'category': category
+    }
+    
+    # 只保留最近30天的记录
+    dates = list(history[symbol].keys())
+    if len(dates) > 30:
+        # 删除最旧的记录
+        for old_date in sorted(dates)[:-30]:
+            del history[symbol][old_date]
+
+def is_new_strong_buy(history, symbol, current_score):
+    """判断是否为新的强买入信号"""
+    if symbol not in history:
+        return True  # 第一次出现就是新的
+    
+    # 获取最近的历史记录（排除今天）
+    today = datetime.now().strftime('%Y-%m-%d')
+    recent_records = {k: v for k, v in history[symbol].items() if k != today}
+    
+    if not recent_records:
+        return True  # 没有历史记录就是新的
+    
+    # 检查最近5天是否有强买入记录
+    recent_dates = sorted(recent_records.keys())[-5:]  # 最近5天
+    
+    for date in recent_dates:
+        if recent_records[date].get('score', 0) >= 85:
+            return False  # 最近5天内已经是强买入了
+    
+    return current_score >= 85  # 当前是强买入且最近5天不是
+
+def categorize_stock(score, is_new):
+    """根据评分和是否新出现来分类股票"""
+    if score >= 85:
+        if is_new:
+            return "🔥 新强买入"  # 最佳买入时机
+        else:
+            return "⭐ 强买入"    # 持续强买入
+    elif score >= 70:
+        return "✅ 买入"
+    else:
+        return None
 
 # ============ 工具函数 ============
 def to_1d_series(x, index=None, name=None):
@@ -248,14 +320,19 @@ def score_stock(df):
     return round(score, 1), rsi_out, volr_out
 
 
-# ============ 主逻辑（优化版本）============
+# ============ 主逻辑（优化版本 + 历史跟踪）============
 results = []
 etf_overview_rows = []
 processed_count = 0
 error_count = 0
 qualified_count = 0
+new_strong_buy_count = 0
 
-print("🚀 开始扫描（优化版本）...")
+# 加载历史记录
+print("📚 加载历史扫描记录...")
+scan_history = load_scan_history()
+
+print("🚀 开始扫描（优化版本 + 新强买入检测）...")
 start_time = datetime.now()
 
 # 批量下载优化 - 分批处理以提高效率
@@ -338,8 +415,19 @@ for batch_idx in range(total_batches):
                 prev_close = float(df["Close"].iloc[-2])
                 change = (close_val / prev_close - 1.0) * 100.0
                 
+                # 检查是否为新强买入
+                is_new = is_new_strong_buy(scan_history, symbol, score)
+                category = categorize_stock(score, is_new)
+                
+                # 更新历史记录
+                if score >= 70:  # 只记录合格的股票
+                    update_stock_history(scan_history, symbol, score, category)
+                
                 if score >= 70:
                     qualified_count += 1
+                    if category == "🔥 新强买入":
+                        new_strong_buy_count += 1
+                    
                     results.append({
                         "类别": ("ETF" if symbol in etf_symbols else "股票"),
                         "代码": symbol,
@@ -348,11 +436,14 @@ for batch_idx in range(total_batches):
                         "RSI": rsi_val,
                         "成交量/均量比": vol_ratio,
                         "策略评分": score,
-                        "评级": "⭐ 强买入" if score >= 85 else "✅ 买入"
+                        "评级": category,
+                        "是否新出现": "是" if is_new and score >= 85 else "否"
                     })
                     
-                    # 实时显示高分股票
-                    if score >= 85:
+                    # 实时显示高分股票（优先显示新强买入）
+                    if category == "🔥 新强买入":
+                        print(f"🔥 发现新强买入: {symbol} (评分: {score}) - 最佳买入时机!")
+                    elif score >= 85:
                         print(f"⭐ 发现强买入: {symbol} (评分: {score})")
                     elif score >= 80:
                         print(f"✅ 发现买入: {symbol} (评分: {score})")
@@ -375,6 +466,10 @@ for batch_idx in range(total_batches):
             except Exception as e:
                 error_count += 1
 
+# 保存历史记录
+print("💾 保存历史扫描记录...")
+save_scan_history(scan_history)
+
 # Final summary
 total_time = (datetime.now() - start_time).total_seconds()
 print(f"\n📊 扫描完成统计:")
@@ -382,8 +477,9 @@ print(f"   - 总扫描数量: {len(symbols_all)}")
 print(f"   - 成功处理: {processed_count}")
 print(f"   - 数据错误: {error_count}")
 print(f"   - 合格标的: {qualified_count}")
-print(f"   - 强买入(≥85分): {len([r for r in results if r['策略评分'] >= 85])}")
-print(f"   - 买入(70-84分): {len([r for r in results if 70 <= r['策略评分'] < 85])}")
+print(f"   - 🔥 新强买入: {new_strong_buy_count} (最佳买入时机!)")
+print(f"   - ⭐ 强买入(≥85分): {len([r for r in results if r['策略评分'] >= 85 and r['评级'] != '🔥 新强买入'])}")
+print(f"   - ✅ 买入(70-84分): {len([r for r in results if 70 <= r['策略评分'] < 85])}")
 print(f"   - 总用时: {total_time/60:.1f}分钟")
 print(f"   - 平均速度: {processed_count/(total_time/60):.1f}个/分钟")
 print("=" * 50)
@@ -407,14 +503,22 @@ else:
 stock_df = df_result_sorted[df_result_sorted["类别"] == "股票"]
 etf_df   = df_result_sorted[df_result_sorted["类别"] == "ETF"]
 
-# 各自拆分强买/买入
+# 各自拆分新强买入/强买入/买入
 def split_tables(sub_df):
-    strong_buy = sub_df[sub_df["策略评分"] >= 85]
+    new_strong_buy = sub_df[sub_df["评级"] == "🔥 新强买入"]
+    strong_buy = sub_df[(sub_df["策略评分"] >= 85) & (sub_df["评级"] != "🔥 新强买入")]
     buy = sub_df[(sub_df["策略评分"] >= 70) & (sub_df["策略评分"] < 85)]
-    return strong_buy, buy
+    return new_strong_buy, strong_buy, buy
 
-stock_strong, stock_buy = split_tables(stock_df) if not stock_df.empty else (empty_pick_df.copy(), empty_pick_df.copy())
-etf_strong, etf_buy     = split_tables(etf_df) if not etf_df.empty else (empty_pick_df.copy(), empty_pick_df.copy())
+if not stock_df.empty:
+    stock_new_strong, stock_strong, stock_buy = split_tables(stock_df)
+else:
+    stock_new_strong, stock_strong, stock_buy = empty_pick_df.copy(), empty_pick_df.copy(), empty_pick_df.copy()
+
+if not etf_df.empty:
+    etf_new_strong, etf_strong, etf_buy = split_tables(etf_df)
+else:
+    etf_new_strong, etf_strong, etf_buy = empty_pick_df.copy(), empty_pick_df.copy(), empty_pick_df.copy()
 
 # 汇总（基于全部结果而非单类）
 if df_result_sorted.empty:
@@ -424,11 +528,20 @@ else:
 
 # 导出 Excel
 with pd.ExcelWriter(OUTPUT_PATH) as writer:
+    # 🔥 新强买入 (最佳买入时机) - 优先显示
+    stock_new_strong.to_excel(writer, sheet_name="Stock 🔥New Strong Buy", index=False)
+    etf_new_strong.to_excel(writer, sheet_name="ETF 🔥New Strong Buy", index=False)
+    
+    # ⭐ 强买入 (持续强买入)
     stock_strong.to_excel(writer, sheet_name="Stock ⭐Strong Buy", index=False)
-    stock_buy.to_excel(writer, sheet_name="Stock ✅Buy", index=False)
     etf_strong.to_excel(writer, sheet_name="ETF ⭐Strong Buy", index=False)
+    
+    # ✅ 买入
+    stock_buy.to_excel(writer, sheet_name="Stock ✅Buy", index=False)
     etf_buy.to_excel(writer, sheet_name="ETF ✅Buy", index=False)
-    industry_summary.to_excel(writer, sheet_name="Industry Summary", index=False)
+    
+    # 汇总统计
+    industry_summary.to_excel(writer, sheet_name="Category Summary", index=False)
 
     # ETF总览（永远输出），按你喜好可再排序一下
     if not df_etf_overview.empty:
@@ -446,11 +559,20 @@ with pd.ExcelWriter(OUTPUT_PATH) as writer:
 base_name = f"US_StrongBuy_Scan_{datetime.now().strftime('%Y%m%d')}"
 
 # 保存各个分类为单独的CSV文件
+# 🔥 新强买入 (最佳买入时机)
+stock_new_strong.to_csv(f"{base_name}_Stock_NewStrongBuy.csv", index=False)
+etf_new_strong.to_csv(f"{base_name}_ETF_NewStrongBuy.csv", index=False)
+
+# ⭐ 强买入 (持续强买入)
 stock_strong.to_csv(f"{base_name}_Stock_StrongBuy.csv", index=False)
-stock_buy.to_csv(f"{base_name}_Stock_Buy.csv", index=False)
 etf_strong.to_csv(f"{base_name}_ETF_StrongBuy.csv", index=False)
+
+# ✅ 买入
+stock_buy.to_csv(f"{base_name}_Stock_Buy.csv", index=False)
 etf_buy.to_csv(f"{base_name}_ETF_Buy.csv", index=False)
-industry_summary.to_csv(f"{base_name}_Industry_Summary.csv", index=False)
+
+# 汇总统计
+industry_summary.to_csv(f"{base_name}_Category_Summary.csv", index=False)
 
 # ETF总览CSV
 if not df_etf_overview.empty:
@@ -466,11 +588,25 @@ if not df_result_sorted.empty:
 print(f"✅ 扫描完成，文件已生成：")
 print(f"📊 Excel文件: {OUTPUT_PATH}")
 print(f"📄 CSV文件:")
-print(f"   - {base_name}_Stock_StrongBuy.csv ({len(stock_strong)} 个强买入股票)")
-print(f"   - {base_name}_Stock_Buy.csv ({len(stock_buy)} 个买入股票)")
-print(f"   - {base_name}_ETF_StrongBuy.csv ({len(etf_strong)} 个强买入ETF)")
-print(f"   - {base_name}_ETF_Buy.csv ({len(etf_buy)} 个买入ETF)")
-print(f"   - {base_name}_ETF_Overview.csv (所有ETF概览)")
-print(f"   - {base_name}_Industry_Summary.csv (行业汇总)")
-print(f"   - {base_name}_All_Results.csv (所有合格标的)")
+print(f"   🔥 新强买入 (最佳买入时机):")
+print(f"     - {base_name}_Stock_NewStrongBuy.csv ({len(stock_new_strong)} 个新强买入股票)")
+print(f"     - {base_name}_ETF_NewStrongBuy.csv ({len(etf_new_strong)} 个新强买入ETF)")
+print(f"   ⭐ 强买入 (持续强买入):")
+print(f"     - {base_name}_Stock_StrongBuy.csv ({len(stock_strong)} 个强买入股票)")
+print(f"     - {base_name}_ETF_StrongBuy.csv ({len(etf_strong)} 个强买入ETF)")
+print(f"   ✅ 买入:")
+print(f"     - {base_name}_Stock_Buy.csv ({len(stock_buy)} 个买入股票)")
+print(f"     - {base_name}_ETF_Buy.csv ({len(etf_buy)} 个买入ETF)")
+print(f"   📊 其他文件:")
+print(f"     - {base_name}_ETF_Overview.csv (所有ETF概览)")
+print(f"     - {base_name}_Category_Summary.csv (分类汇总)")
+print(f"     - {base_name}_All_Results.csv (所有合格标的)")
+
+# 显示最佳投资机会（优先显示新强买入）
+if not df_result_sorted.empty:
+    print(f"\n🏆 前10个最佳投资机会:")
+    print("=" * 90)
+    for i, (_, row) in enumerate(df_result_sorted.head(10).iterrows()):
+        rating_emoji = "🔥" if row['评级'] == '🔥 新强买入' else ("⭐" if row['策略评分'] >= 85 else "✅")
+        print(f"{rating_emoji} {row['代码']:>6} | {row['类别']:>3} | {row['策略评分']:>5.1f}分 | ${row['收盘价']:>8.2f} | {row['涨跌幅 %']:>6.1f}%")
 
