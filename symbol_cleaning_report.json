@@ -1,0 +1,5248 @@
+{
+  "清理时间": "2025-11-15T10:44:12.612789",
+  "原始统计": {
+    "股票数量": 1256,
+    "ETF数量": 50,
+    "总数量": 1306
+  },
+  "清理后统计": {
+    "有效股票": 0,
+    "有效ETF": 0,
+    "总有效数量": 0
+  },
+  "无效符号": {
+    "无效股票": [
+      {
+        "symbol": "AAPL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MSFT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GOOGL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GOOG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMZN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "META",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TSLA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NVDA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NFLX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ADBE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CRM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ORCL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "INTC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "QCOM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AVGO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TXN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CSCO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "IBM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "INTU",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NOW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMAT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ADI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MU",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LRCX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KLAC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MCHP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SNPS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CDNS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FTNT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PANW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CRWD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ZS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "OKTA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DDOG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NET",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SNOW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PLTR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "U",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DOCU",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ZM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TWLO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SHOP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SQ",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "PYPL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ROKU",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SPOT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UBER",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LYFT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ABNB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "COIN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RBLX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UNITY",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "PINS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SNAP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TWTR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "YELP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ETSY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EBAY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BABA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "JD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PDD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BIDU",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NTES",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TME",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BILI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "IQ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VIPS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TEAM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ATLASSIAN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "WDAY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VEEV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SPLK",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ZI",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "FIVN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "COUP",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BILL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SMAR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "GTLB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ESTC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ELASTIC",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "MDB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CFLT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DOMO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SUMO",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "APPN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PCTY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CYBR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FEYE",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "VRNS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TENB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RPD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "QLYS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PING",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BUG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SAIL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MIME",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ADSK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ANSS",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CTXS",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "FISV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PAYX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VRSN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AKAM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "JNPR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "FFIV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NTAP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WDC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "STX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SMCI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PURE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PSTG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NTNX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WORK",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ZEN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "HUBS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SAP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DELL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HPQ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HPE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VMW",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CTSH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EPAM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GLOB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EXLS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WIT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CGNX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FORM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FRSH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "JAMF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MNDY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PATH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PLAN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "QTWO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RAMP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RIOT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SPSC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TWOU",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "UPWK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ACIW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ADTN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AEYE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AFRM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AGYS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AIMC",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ALRM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ALTR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AMKR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMOT",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AMSC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ANET",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ANGI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "APPF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "APPS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ARCT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ARQT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ASML",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ATEN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ATNI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AVAV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BAND",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BBOX",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BCOV",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BLKB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BSIG",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CACI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CALX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CAMP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CCOI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CERN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CHKP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CIEN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CLDR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "COMM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CRTO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CSGS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "JNJ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PFE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UNH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ABBV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MRK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TMO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ABT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LLY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DHR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BMY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMGN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MDT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ISRG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GILD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VRTX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "REGN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ZTS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CVS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HUM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ANTM",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ELV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CNC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MOH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HCA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UHS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "THC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CYH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LPLA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DVA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BIIB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CELG",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ILMN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MRNA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BNTX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NVAX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "INO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SRNE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VXRT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TDOC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DXCM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "INTUV",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ALGN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HOLX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TECH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "A",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GEHC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BSX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SYK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ZIMMER",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "HRC",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "RVTY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SOLV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PODD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TANDEM",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "OMCL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "JAZZ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HALO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BMRN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RARE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FOLD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ARWR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EDIT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CRSP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NTLA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BEAM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BLUE",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "SAGE",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "IONS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ACAD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PTCT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ALNY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RGNX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VCEL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FATE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CRBU",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VERV",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "PRIME",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CGEM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AGIO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MRVI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KROS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RVMD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SGEN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "SEAG",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "IMMU",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "GOSS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ADCT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "IMGN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "DCPH",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "MRSN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KYMR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CART",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMED",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ENSG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HSIC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PDCO",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "POOL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WST",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PKI",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AAON",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ABCB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ABMD",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ACHC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ACLS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ADMA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ADMP",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ADMS",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ADPT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AEMD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AERI",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AFIB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AFMD",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AGEN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AGFS",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AKBA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AKRO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ALBO",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ALDX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ALEC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ALKS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ALLK",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ALRN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ALXN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AMAG",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AMPH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMRN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMRS",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ANAB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ANIK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ANIP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ANTE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "APLS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "APLT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "APOG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "APPH",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "APRE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "APTO",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ARDX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ARQL",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ARRY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ARTX",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ARVN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ASND",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ASRT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ATNX",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ATRC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ATRS",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ATXI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AUPH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AVCO",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AVEO",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AVIR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AVXL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AXSM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AYTU",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AZRX",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BCRX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BDSI",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BFRA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BGNE",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BHVN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BIOL",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BIOX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BKYI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BLCM",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BOLD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BPMC",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BPTH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BSGM",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BSTC",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BTAI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BVXV",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BYSI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CAPR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CARA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CARB",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CATB",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CBAY",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CBIO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CBLI",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CBPO",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CCRN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CDMO",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CDNA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CDTX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CDXC",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CDXS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CERS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CHMA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CHRS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CLDX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CLLS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CLPT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CLRB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CLSD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CLVS",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CMRX",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CNCE",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CNTG",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "COCP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CODX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "COGT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "COLB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "COLL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CORT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CPRX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CRBP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CRIS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CRMD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CRTX",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CRVL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CRWS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CSTL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CTMX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CTRE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CTSO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CTTC",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CUTR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CVAC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CVET",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CWBR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BRK.A",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BRK.B",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "JPM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BAC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WFC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "C",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "USB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PNC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TFC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "COF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AXP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BLK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SCHW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MMC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AON",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TRV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PGR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ALL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MET",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PRU",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AIG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AFL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HIG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PFG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TMK",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "LNC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UNM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "V",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FIS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ADP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TYL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "JKHY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SPGI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MCO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MSCI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ICE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CME",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NDAQ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CBOE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "IEX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KKR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "APO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "OWL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ARES",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HLNE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TPVG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PSEC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MAIN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KEY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FITB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HBAN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CFG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MTB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "STI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ZION",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CMA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PBCT",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "WAL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EWBC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PACW",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "SBNY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SIVB",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BANF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CASH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TOWN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HOPE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ALLY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UPST",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SOFI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "OPEN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RKT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UWMC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GHVI",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "IPOE",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "TREE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ENVA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WRLD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "QFIN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LU",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TIGR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FUTU",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LMND",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ROOT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MKTX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "IBKR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ETFC",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AMTD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RJF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BEN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "IVZ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TROW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EVRG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FNF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FAF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MGIC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MTG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ESNT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NMIH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PMT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NLY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AGNC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "STWD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BXMT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TWO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CIM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NYMT",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "MFA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ARR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "IVR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MITT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EARN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GPMT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TRTX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KREF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ACRE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ARI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BRMK",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "WAFD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FFIN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FULT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WSFS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NBTB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BRKL",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ONB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UBSI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FIBK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CATY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ACGL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AFG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AIZ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ANAT",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AXS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BRO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CINF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CNA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ESGR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "GSHD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KMPR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "L",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MKL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PRI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RE",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "RGA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RYI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SAFT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SEIC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "STC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "THG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WRB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "Y",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AEIS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AFYA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AGCO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AINV",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AIRT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AKTS",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ALCO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ALEX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ALGM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ALGT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ALHC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMBC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMCR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMCX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMEH",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "HD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MCD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NKE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LOW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SBUX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TJX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BKNG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CMG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ORLY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AZO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ULTA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LULU",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DECK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CROX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SKX",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "UAA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "F",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RIVN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LCID",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NIO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XPEV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GOEV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RIDE",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "WKHS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DIS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CMCSA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "T",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VZ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CHTR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TMUS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "S",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DISH",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "SIRI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MAR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HLT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "H",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "IHG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RHP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PLYA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "SHO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HST",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CCL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RCL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NCLH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CUK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EXPE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TRIP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MMYT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TCOM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HTHT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "YUM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "QSR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DPZ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PZZA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BLMN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DENN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SHAK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WING",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TXRH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DRI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BBY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TGT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WMT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "COST",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SYY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DLTR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BIG",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "FIVE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "W",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WAYFAIR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CHWY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PETS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WOOF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BARK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PETQ",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "TRUP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "IDXX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LVS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WYNN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MGM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CZR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PENN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BYD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GDEN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MLCO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DKNG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BETZ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "OLLI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PRTY",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ANF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AEO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GPS",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "M",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KSS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "JWN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "NILE",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "GME",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EXPR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BBBY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BED",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CONN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "HVT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PIR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "SCVL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KIRK",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ROST",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TSCO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LECO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "JBHT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CHRW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EXPD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ODFL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SAIA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ARCB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WERN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KNX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MATX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HUBG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SNDR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LSTR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DSGX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ECHO",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "MRTN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FWRD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HTLD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CVLG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SAIC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KTOS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TXT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WWD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KALU",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HAYN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ROCK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SUM",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "USCR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "USLM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MLI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DOOR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BLDR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SSD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AZEK",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BECN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "UFPI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TREX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MAXN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SPWR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PLUG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FCEL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BLDP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HYLN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NKLA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BLNK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CHPT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TELL",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "LNG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FLNG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GMLP",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "KRP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GLNG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NEXT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CLNE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WPRT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HYZN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ORA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "REGI",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "GEVO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMTX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BIOF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ORIG",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "REX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GPRE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PEIX",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ALTO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PEP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MDLZ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KMB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GIS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "K",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CPB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CAG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HRL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TSN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TYSON",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "JM",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "SJM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MKC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CHD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CLX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "USFD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PFGC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UNFI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SPTN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CALM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "JJSF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LANC",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "SENEA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BTI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UVV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TPG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VGR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "XXII",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TBBK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TURNING",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "TCBC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "COTY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "IFF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FDP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EDGW",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "IPAR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "USNA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HAIN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ADM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MOS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NTR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "IPI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SMG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FMC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CTVA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WBA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "RAD",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "RITE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FRED",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "DRUG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HDSN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "STZ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DEO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TAP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SAM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BF.B",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BREW",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "WEST",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "COKE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KDP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MNST",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CELH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FIZZ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "REED",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ZVIA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KONA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "LTEA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "PRMW",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "JBSS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VITL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "INGR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SEB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "POST",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LWAY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RIBT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SENEB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SAFM",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AMNB",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AMRC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMRK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMSF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMTB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMWD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ANCN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ANDE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XOM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CVX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "COP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EOG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SLB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PXD",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "KMI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "OKE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WMB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EPD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MPC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VLO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PSX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HES",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "DVN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FANG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "APA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "OXY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HAL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BKR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MRO",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "APC",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "NOV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FTI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WHD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PTEN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RIG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VAL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DO",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "TRGP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ET",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MPLX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PAA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PAGP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WES",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HESM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "USAC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ENLC",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "DCP",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "NEE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DUK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "D",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EXC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XEL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SRE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AEP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PCG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ED",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ETR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ES",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AES",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PPL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CMS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DTE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LNT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ENPH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SEDG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RUN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NOVA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CSIQ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "JKS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DQ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SOL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WEC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CNP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ATO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NWE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PNW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "IDA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "POR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AVA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AGR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "BKH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SJI",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "NJR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SWX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CPK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UTL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UGI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "OGS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NFG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NWN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AWK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WTR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CWT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ARTNA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MSEX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SBS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "YORW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CTWS",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "GWRS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WTRG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AWR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SJW",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "TLRY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LIN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "APD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ECL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SHW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FCX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NEM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GOLD",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AEM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KGC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AU",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CENX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ACH",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "TMST",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CRS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ZEUS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HXL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MLM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VMC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NUE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "STLD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "X",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CLF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SCHN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CMC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SID",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CAT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HON",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UPS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FDX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LMT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RTX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NOC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MMM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EMR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ITW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ROK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DOV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XYL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FLS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FLR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "JCI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CARR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "OTIS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "IR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FAST",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MSM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SWK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SNA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PCAR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CMI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ETN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EATON",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AME",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ROP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LDOS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TDG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CTAS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RSG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WCN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CWST",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CLH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GFL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SRCL",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ECOL",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "MEG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HURN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NVEE",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "RAIL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UNP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CSX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NSC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CNI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KSU",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "GWR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "GATX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TRN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DAL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UAL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AAL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LUV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ALK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "JBLU",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SAVE",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "HA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "MESA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SKYW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AOSL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AOUT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "APAM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "APLE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "APTS",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AQUA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ARCC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PLD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CCI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EQIX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PSA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "WELL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DLR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "O",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SBAC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EXR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AVB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EQR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UDR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ESS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MAA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CPT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AIV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BRG",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "NXRT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "IRT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SPG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "REG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MAC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KIM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BXP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VNO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SLG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HIW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DEI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PGRE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VTR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PEAK",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "OHI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HCP",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "MPW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DOC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LTC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SBRA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AHT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RLJ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CLDT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "INN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PEI",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "TCO",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "WPG",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CBL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SKT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ROIC",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AKR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BFS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RPAI",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "SITC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CXW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GEO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CORR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "SAFE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LAND",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "JOE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RLGY",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "GMRE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GOOD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AMH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SFR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "INVH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VRE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RESI",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "UMH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MSA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ELS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SUI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LBRDA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LBRDK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LILAK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BATRK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FWONA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "QRTEA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "MTCH",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BMBL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FUBO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PARA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "WBD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FOX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FOXA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VIAC",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "DISCA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AMC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CNK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "IMAX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MARK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RAVE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NCMI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RDHL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ELSE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GAIA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HEAR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "LUMN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FYBR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CNSL",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "IRDM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VSAT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GILT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ORBC",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "NTGR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VIAV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LITE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TTWO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ATVI",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ZNGA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "RSI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TSM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NVO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RHHBY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SONY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "RDS.A",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "RDS.B",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "E",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SAN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BBVA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ING",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BCS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CS",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "UBS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "NMR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ABX",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "PAAS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CDE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FSM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EGO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SBSW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SCCO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VALE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "DOCN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "MTTR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "HOOD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CGC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CRON",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ACB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HEXO",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "OGI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "APHA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "SNDL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ZYNE",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "GRWG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AAWW",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AAXJ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ABEO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ABUS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ACCD",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ACCO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ACEL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ACER",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ACES",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ACET",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ACHL",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ACHN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ACIA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ACIU",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ACMR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ACNB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ACOR",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ACRS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ACRX",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ACST",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ACTG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ADES",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ADIL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ADNT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ADOC",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ADRO",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ADUS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ADVS",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "ADXS",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AEHL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AEHR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AEI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AESE",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AEVA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AFBI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AFCG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AFIN",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "AGBA",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CYAD",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CYCC",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CYCN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CYTH",
+        "reason": "数据不足"
+      },
+      {
+        "symbol": "CYTK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "CZNC",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      }
+    ],
+    "无效ETF": [
+      {
+        "symbol": "SPY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "QQQ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "IWM",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VTI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VOO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VEA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VWO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "AGG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BND",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LQD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "HYG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "EMB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TIP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GLD",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SLV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "USO",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "UNG",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "VNQ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "REIT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XLF",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XLE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XLI",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XLK",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XLV",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XLY",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XLP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XLU",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XLRE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XLB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "IYR",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KRE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "KBE",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XHB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ITB",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XRT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XME",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XOP",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "XES",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GDXJ",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "GDX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "SIL",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "COPX",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "URA",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "ICLN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "PBW",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "QCLN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "FAN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "TAN",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "LIT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      },
+      {
+        "symbol": "BATT",
+        "reason": "数据获取失败: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+      }
+    ]
+  },
+  "数据质量": {
+    "股票质量": "0.0%",
+    "ETF质量": "0.0%",
+    "总体质量": "0.0%"
+  }
+}

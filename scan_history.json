@@ -3,17 +3,29 @@
     "2025-11-13": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 123,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "GOOGL": {
     "2025-11-13": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 126,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "GOOG": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 126,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -27,10 +39,18 @@
     "2025-11-13": {
       "score": 125,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 149,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "IBM": {
     "2025-11-13": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -45,11 +65,19 @@
     "2025-11-13": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 130,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "TWLO": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -57,24 +85,40 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 100,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "SNAP": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 100,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "VIPS": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 122,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ESTC": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 100,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "CFLT": {
@@ -93,10 +137,18 @@
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 137,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "VRSN": {
     "2025-11-13": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 85,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -105,12 +157,20 @@
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 133,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "WDC": {
     "2025-11-13": {
       "score": 85,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 95,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
   "STX": {
@@ -123,28 +183,48 @@
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 133,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "EPAM": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 125,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "GLOB": {
     "2025-11-13": {
       "score": 130,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 121,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "FRSH": {
     "2025-11-13": {
       "score": 125,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 147,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "JAMF": {
     "2025-11-13": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 85,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -153,12 +233,20 @@
     "2025-11-13": {
       "score": 85,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 95,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
   "RAMP": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 129,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "UPWK": {
@@ -177,16 +265,28 @@
     "2025-11-13": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ALRM": {
     "2025-11-13": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CACI": {
     "2025-11-13": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 85,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -201,16 +301,28 @@
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 129,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "COMM": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 122,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CSGS": {
     "2025-11-13": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -219,23 +331,39 @@
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 149,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "PFE": {
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ABBV": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 134,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MRK": {
     "2025-11-13": {
       "score": 125,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 152,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
@@ -243,11 +371,19 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ABT": {
     "2025-11-13": {
       "score": 100,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 151,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
@@ -255,53 +391,89 @@
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 143,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "BMY": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 128,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AMGN": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 141,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MDT": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 124,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ISRG": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "GILD": {
     "2025-11-13": {
       "score": 125,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 137,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "VRTX": {
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 142,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "REGN": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 141,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "HCA": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 121,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -309,17 +481,29 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 132,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "LPLA": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 125,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "BIIB": {
     "2025-11-13": {
       "score": 125,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 159,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
@@ -327,23 +511,39 @@
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 127,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "VXRT": {
     "2025-11-13": {
       "score": 85,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 105,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
   "ALGN": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "HOLX": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -351,12 +551,20 @@
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 125,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "BSX": {
     "2025-11-13": {
       "score": 120,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 133,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SYK": {
@@ -369,41 +577,69 @@
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 137,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SOLV": {
     "2025-11-13": {
       "score": 120,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 143,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "PODD": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 138,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "OMCL": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 121,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "JAZZ": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 137,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "HALO": {
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 126,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "BMRN": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 138,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -411,17 +647,29 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 127,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ARWR": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 95,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "ACAD": {
     "2025-11-13": {
       "score": 105,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 154,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
@@ -429,17 +677,29 @@
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 126,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "VCEL": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 128,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CGEM": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 124,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -447,17 +707,29 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 149,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MRVI": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 105,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "KROS": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 141,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -465,11 +737,19 @@
     "2025-11-13": {
       "score": 130,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 141,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CART": {
     "2025-11-13": {
       "score": 115,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 156,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
@@ -477,11 +757,19 @@
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 124,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ADMA": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 128,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -489,10 +777,18 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 105,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "AKRO": {
     "2025-11-13": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -501,23 +797,39 @@
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ANIK": {
     "2025-11-13": {
       "score": 120,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 135,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ARDX": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 105,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "ARVN": {
     "2025-11-13": {
       "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 127,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -525,17 +837,29 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 120,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AXSM": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 126,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "BKYI": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -543,17 +867,29 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 110,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "CBIO": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 122,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CDNA": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 139,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -561,11 +897,19 @@
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CERS": {
     "2025-11-13": {
       "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 127,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -573,17 +917,29 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 131,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "COLB": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 129,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CPRX": {
     "2025-11-13": {
       "score": 110,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 152,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
@@ -597,6 +953,10 @@
     "2025-11-13": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 142,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "JPM": {
@@ -609,17 +969,29 @@
     "2025-11-13": {
       "score": 120,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 130,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MS": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 121,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "C": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -627,11 +999,19 @@
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AXP": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -639,12 +1019,20 @@
     "2025-11-13": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CB": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 133,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MMC": {
@@ -657,17 +1045,29 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "TRV": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 134,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "PGR": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 136,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -675,46 +1075,78 @@
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 156,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
   "MET": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "PRU": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 126,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AFL": {
     "2025-11-13": {
       "score": 125,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 131,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "HIG": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 143,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "PFG": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 135,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "LNC": {
     "2025-11-13": {
       "score": 85,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 121,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "UNM": {
     "2025-11-13": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 85,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -729,11 +1161,19 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 139,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "BR": {
     "2025-11-13": {
       "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 129,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -741,6 +1181,10 @@
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MCO": {
@@ -759,12 +1203,20 @@
     "2025-11-13": {
       "score": 120,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 144,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CBOE": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 129,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "KKR": {
@@ -777,17 +1229,29 @@
     "2025-11-13": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "HLNE": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 147,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "TPVG": {
     "2025-11-13": {
       "score": 125,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 150,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
@@ -795,10 +1259,18 @@
     "2025-11-13": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CMA": {
     "2025-11-13": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -807,23 +1279,39 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 95,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "ENVA": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 136,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MKTX": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 139,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "TW": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -831,65 +1319,109 @@
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 128,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "IVZ": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AMG": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 142,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "FNF": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 131,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "FAF": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 128,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MGIC": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 125,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MTG": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 140,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "PMT": {
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 139,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "NLY": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 127,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ARR": {
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 125,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "IVR": {
     "2025-11-13": {
       "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -897,29 +1429,49 @@
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 124,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "TRTX": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ACRE": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 141,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "WAFD": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 131,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "WSFS": {
     "2025-11-13": {
       "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 123,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -927,42 +1479,70 @@
     "2025-11-13": {
       "score": 85,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ACGL": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 133,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AFG": {
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 137,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AIZ": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 143,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AXS": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 129,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CINF": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 136,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CNA": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 141,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "GSHD": {
@@ -975,23 +1555,39 @@
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 154,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
   "MKL": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 144,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "RGA": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SAFT": {
     "2025-11-13": {
       "score": 125,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 156,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
@@ -999,28 +1595,48 @@
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 143,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "THG": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 129,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "WRB": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 144,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AFYA": {
     "2025-11-13": {
       "score": 85,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 139,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ALGT": {
     "2025-11-13": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -1029,46 +1645,78 @@
     "2025-11-13": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 123,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AMCR": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 126,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AMCX": {
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MCD": {
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 123,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "NKE": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SBUX": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 105,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "TJX": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 127,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ORLY": {
     "2025-11-13": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -1077,41 +1725,69 @@
     "2025-11-13": {
       "score": 85,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ULTA": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "F": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 123,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "GM": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 95,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "RIVN": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "XPEV": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 124,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "T": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -1119,16 +1795,28 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 122,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MAR": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 122,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "HLT": {
     "2025-11-13": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -1137,23 +1825,39 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 125,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "IHG": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 124,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "RHP": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 123,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SHO": {
     "2025-11-13": {
       "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 127,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -1161,11 +1865,19 @@
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 134,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "EXPE": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -1173,29 +1885,49 @@
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 121,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "HTHT": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 139,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "YUM": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 122,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "QSR": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 139,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "DENN": {
     "2025-11-13": {
       "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -1203,36 +1935,60 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 139,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "DG": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 135,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "W": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 95,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "IDXX": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 129,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "LVS": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 130,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MLCO": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 129,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ANF": {
@@ -1245,10 +2001,18 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 133,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "M": {
     "2025-11-13": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -1257,18 +2021,30 @@
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "HVT": {
     "2025-11-13": {
       "score": 120,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 129,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ROST": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 130,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "TSCO": {
@@ -1281,23 +2057,39 @@
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 132,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "EXPD": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 124,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MATX": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 138,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "WWD": {
     "2025-11-13": {
       "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -1311,22 +2103,38 @@
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 130,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "FLNG": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 138,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "KRP": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 145,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "NEXT": {
     "2025-11-13": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -1335,12 +2143,20 @@
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 142,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "KO": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 144,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CL": {
@@ -1353,10 +2169,18 @@
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "K": {
     "2025-11-13": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 85,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -1365,6 +2189,10 @@
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 95,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "HRL": {
@@ -1377,12 +2205,20 @@
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 100,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "SJM": {
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 122,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MKC": {
@@ -1395,11 +2231,19 @@
     "2025-11-13": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 122,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SENEA": {
     "2025-11-13": {
       "score": 130,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 164,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
@@ -1407,18 +2251,30 @@
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 95,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "TPG": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 95,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "IFF": {
     "2025-11-13": {
       "score": 120,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 124,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "FDP": {
@@ -1431,12 +2287,20 @@
     "2025-11-13": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "NTR": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 142,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SMG": {
@@ -1449,6 +2313,10 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 125,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "DRUG": {
@@ -1461,6 +2329,10 @@
     "2025-11-13": {
       "score": 125,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "COKE": {
@@ -1473,11 +2345,19 @@
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 151,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
   "ZVIA": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -1485,17 +2365,29 @@
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 147,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SEB": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 127,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "POST": {
     "2025-11-13": {
       "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 134,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -1503,10 +2395,18 @@
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 149,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AMSF": {
     "2025-11-13": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -1515,11 +2415,19 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "XOM": {
     "2025-11-13": {
       "score": 130,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 156,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
@@ -1527,82 +2435,138 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 136,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "COP": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 142,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "EOG": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 133,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SLB": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 143,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "OKE": {
     "2025-11-13": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 155,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
   "EPD": {
     "2025-11-13": {
       "score": 120,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 143,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MPC": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 141,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "VLO": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 144,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "PSX": {
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 131,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "DVN": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 141,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "FANG": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 148,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "APA": {
     "2025-11-13": {
       "score": 125,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 144,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "OXY": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "HAL": {
     "2025-11-13": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -1611,17 +2575,29 @@
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 135,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "FTI": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 139,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "HP": {
     "2025-11-13": {
       "score": 110,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 150,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
@@ -1629,17 +2605,29 @@
     "2025-11-13": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "RIG": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 121,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "VAL": {
     "2025-11-13": {
       "score": 115,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 151,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
@@ -1647,17 +2635,29 @@
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 135,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MPLX": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 142,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "PAGP": {
     "2025-11-13": {
       "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 132,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -1665,23 +2665,39 @@
     "2025-11-13": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 140,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "USAC": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 131,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "NEE": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "D": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -1689,17 +2705,29 @@
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "PCG": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 128,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ED": {
     "2025-11-13": {
       "score": 115,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 151,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
@@ -1713,23 +2741,39 @@
     "2025-11-13": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 95,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
   "CSIQ": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "JKS": {
     "2025-11-13": {
       "score": 85,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 105,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
   "DQ": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 129,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -1737,66 +2781,110 @@
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 137,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ATO": {
     "2025-11-13": {
       "score": 125,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "NWE": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 131,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "POR": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 137,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AVA": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 95,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "BKH": {
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 131,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "NJR": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 126,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SWX": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 131,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SR": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CPK": {
     "2025-11-13": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 153,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
   "UGI": {
     "2025-11-13": {
       "score": 125,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 125,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "OGS": {
@@ -1809,18 +2897,30 @@
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 128,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SBS": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 142,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "YORW": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 95,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "AWR": {
@@ -1833,35 +2933,59 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "NEM": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 128,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AEM": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 130,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "KGC": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 148,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AU": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 132,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CRS": {
     "2025-11-13": {
       "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 126,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -1869,11 +2993,19 @@
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 128,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "STLD": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 122,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -1881,6 +3013,10 @@
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 128,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CMC": {
@@ -1893,17 +3029,29 @@
     "2025-11-13": {
       "score": 85,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "DE": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 136,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "HON": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -1911,41 +3059,69 @@
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 138,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "FDX": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 134,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MMM": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 120,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "PH": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 143,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ROK": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 127,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "DOV": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 144,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "FLS": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 129,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -1953,6 +3129,10 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 124,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MSM": {
@@ -1965,6 +3145,10 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 135,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AME": {
@@ -1977,6 +3161,10 @@
     "2025-11-13": {
       "score": 130,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 144,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CTAS": {
@@ -1989,17 +3177,29 @@
     "2025-11-13": {
       "score": 85,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 127,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CWST": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "HURN": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 121,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2007,6 +3207,10 @@
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 125,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "DAL": {
@@ -2025,71 +3229,119 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MESA": {
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 132,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "WELL": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 126,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AIV": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SPG": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 95,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "VTR": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 120,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "OHI": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 136,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "LTC": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 126,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SBRA": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "RLJ": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 100,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "CBL": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 144,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SKT": {
     "2025-11-13": {
       "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 124,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2097,18 +3349,30 @@
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 124,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "LAND": {
     "2025-11-13": {
       "score": 120,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 105,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "JOE": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 133,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "GOOD": {
@@ -2121,11 +3385,19 @@
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 124,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ELS": {
     "2025-11-13": {
       "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 127,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2133,41 +3405,69 @@
     "2025-11-13": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 100,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
   "WBD": {
     "2025-11-13": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 100,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
   "FOX": {
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 131,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "FOXA": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 131,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CNK": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 100,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "IMAX": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 130,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "RAVE": {
     "2025-11-13": {
       "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 127,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2175,6 +3475,10 @@
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 100,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "VIAV": {
@@ -2187,17 +3491,29 @@
     "2025-11-13": {
       "score": 90,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "RHHBY": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 130,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SONY": {
     "2025-11-13": {
       "score": 115,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 153,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
@@ -2205,59 +3521,99 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 129,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "E": {
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 133,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SAN": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 143,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "BBVA": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 142,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ING": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 95,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "BCS": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 100,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "DB": {
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 128,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "NMR": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 135,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "PAAS": {
     "2025-11-13": {
       "score": 125,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 142,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "HL": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 129,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2265,11 +3621,19 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SBSW": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2277,11 +3641,19 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 130,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "DOCN": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 128,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2301,29 +3673,49 @@
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 130,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ACTG": {
     "2025-11-13": {
       "score": 130,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 146,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AFBI": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 135,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CYTK": {
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 127,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CZNC": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 137,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2331,24 +3723,40 @@
     "2025-11-13": {
       "score": 110,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "GLD": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SLV": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 110,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "UNG": {
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 105,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "XLF": {
@@ -2361,17 +3769,29 @@
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 115,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "XLV": {
     "2025-11-13": {
       "score": 105,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 105,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "KBE": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2379,11 +3799,19 @@
     "2025-11-13": {
       "score": 115,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 110,
+      "category": "\u2b50 \u5f3a\u4e70\u5165"
     }
   },
   "GDXJ": {
     "2025-11-13": {
       "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2391,11 +3819,19 @@
     "2025-11-13": {
       "score": 100,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SIL": {
     "2025-11-13": {
       "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2403,16 +3839,28 @@
     "2025-11-13": {
       "score": 125,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 130,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "BATT": {
     "2025-11-13": {
       "score": 95,
       "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AMD": {
     "2025-11-13": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -2427,10 +3875,18 @@
     "2025-11-13": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ZM": {
     "2025-11-13": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -2439,16 +3895,28 @@
     "2025-11-13": {
       "score": 85,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 95,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
   "APPN": {
     "2025-11-13": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "ATNI": {
     "2025-11-13": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -2457,11 +3925,19 @@
     "2025-11-13": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "BNTX": {
     "2025-11-13": {
       "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2469,11 +3945,19 @@
     "2025-11-13": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 95,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
     }
   },
   "MRSN": {
     "2025-11-13": {
       "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2486,6 +3970,10 @@
   "AUPH": {
     "2025-11-13": {
       "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 125,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2511,6 +3999,10 @@
     "2025-11-13": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "CFG": {
@@ -2522,6 +4014,10 @@
   "MTB": {
     "2025-11-13": {
       "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2547,11 +4043,19 @@
     "2025-11-13": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 134,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "NMIH": {
     "2025-11-13": {
       "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 148,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2559,17 +4063,29 @@
     "2025-11-13": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "MFA": {
     "2025-11-13": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "FULT": {
     "2025-11-13": {
       "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2595,11 +4111,19 @@
     "2025-11-13": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "TCBC": {
     "2025-11-13": {
       "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2613,6 +4137,10 @@
     "2025-11-13": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "AMTB": {
@@ -2625,16 +4153,28 @@
     "2025-11-13": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 133,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "BKR": {
     "2025-11-13": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 137,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "SRE": {
     "2025-11-13": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -2661,10 +4201,18 @@
     "2025-11-13": {
       "score": 85,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 126,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "TX": {
     "2025-11-13": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -2679,10 +4227,18 @@
     "2025-11-13": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "UBS": {
     "2025-11-13": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
@@ -2697,11 +4253,19 @@
     "2025-11-13": {
       "score": 80,
       "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
     }
   },
   "VOO": {
     "2025-11-13": {
       "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    },
+    "2025-11-15": {
+      "score": 80,
       "category": "\u2705 \u4e70\u5165"
     }
   },
@@ -2714,6 +4278,348 @@
   "COPX": {
     "2025-11-13": {
       "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "LRCX": {
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "CRWD": {
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "DDOG": {
+    "2025-11-15": {
+      "score": 95,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    }
+  },
+  "VEEV": {
+    "2025-11-15": {
+      "score": 120,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "APPF": {
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "ARQT": {
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "CNC": {
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "SRNE": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "GOSS": {
+    "2025-11-15": {
+      "score": 95,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    }
+  },
+  "AEMD": {
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "BPTH": {
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "FITB": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "TOWN": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "LMND": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "TWO": {
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "EARN": {
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "GPMT": {
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "KREF": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "LULU": {
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "TMUS": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "DPZ": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "KR": {
+    "2025-11-15": {
+      "score": 122,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "CW": {
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "LNG": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "JJSF": {
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "CF": {
+    "2025-11-15": {
+      "score": 134,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "WMB": {
+    "2025-11-15": {
+      "score": 129,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "ET": {
+    "2025-11-15": {
+      "score": 131,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "PAA": {
+    "2025-11-15": {
+      "score": 135,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "UTL": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "NFG": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "RTX": {
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "UNP": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "NSC": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "APLE": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "AMT": {
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "SBAC": {
+    "2025-11-15": {
+      "score": 95,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    }
+  },
+  "AVB": {
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "MAA": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "CPT": {
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "NXRT": {
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "IRT": {
+    "2025-11-15": {
+      "score": 124,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "HIW": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "HR": {
+    "2025-11-15": {
+      "score": 100,
+      "category": "\ud83d\udd25 \u65b0\u5f3a\u4e70\u5165"
+    }
+  },
+  "BFS": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "GMRE": {
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "INVH": {
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "VRE": {
+    "2025-11-15": {
+      "score": 131,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "SUI": {
+    "2025-11-15": {
+      "score": 120,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "LITE": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "ACRS": {
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "QQQ": {
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "XLK": {
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "KRE": {
+    "2025-11-15": {
+      "score": 85,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "XES": {
+    "2025-11-15": {
+      "score": 90,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "FAN": {
+    "2025-11-15": {
+      "score": 80,
+      "category": "\u2705 \u4e70\u5165"
+    }
+  },
+  "TAN": {
+    "2025-11-15": {
+      "score": 90,
       "category": "\u2705 \u4e70\u5165"
     }
   }

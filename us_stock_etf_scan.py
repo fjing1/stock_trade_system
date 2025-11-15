@@ -35,8 +35,16 @@ print(f"   - 预计扫描时间: {len(symbols_all) * 2 // 60}分钟 (估算)")
 print("=" * 50)
 
 
-OUTPUT_PATH = f"US_StrongBuy_Scan_{datetime.now().strftime('%Y%m%d')}.xlsx"
-HISTORY_FILE = "scan_history.json"
+# 创建结果文件夹结构
+RESULTS_BASE_DIR = "results"
+DATE_FOLDER = datetime.now().strftime('%Y%m%d')
+RESULTS_DIR = os.path.join(RESULTS_BASE_DIR, DATE_FOLDER)
+
+# 确保文件夹存在
+os.makedirs(RESULTS_DIR, exist_ok=True)
+
+OUTPUT_PATH = os.path.join(RESULTS_DIR, f"US_StrongBuy_Scan_{DATE_FOLDER}.xlsx")
+HISTORY_FILE = "scan_history.json"  # 保持在根目录
 
 
 # ============ 历史跟踪函数 ============
@@ -643,36 +651,37 @@ with pd.ExcelWriter(OUTPUT_PATH) as writer:
           .to_excel(writer, sheet_name="ETF Overview", index=False)
 
 # 同时导出 CSV 文件（Mac/VSCode 友好格式）
-base_name = f"US_StrongBuy_Scan_{datetime.now().strftime('%Y%m%d')}"
+base_name = f"US_StrongBuy_Scan_{DATE_FOLDER}"
 
-# 保存各个分类为单独的CSV文件
+# 保存各个分类为单独的CSV文件到日期文件夹
 # 🔥 新强买入 (最佳买入时机)
-stock_new_strong.to_csv(f"{base_name}_Stock_NewStrongBuy.csv", index=False)
-etf_new_strong.to_csv(f"{base_name}_ETF_NewStrongBuy.csv", index=False)
+stock_new_strong.to_csv(os.path.join(RESULTS_DIR, f"{base_name}_Stock_NewStrongBuy.csv"), index=False)
+etf_new_strong.to_csv(os.path.join(RESULTS_DIR, f"{base_name}_ETF_NewStrongBuy.csv"), index=False)
 
 # ⭐ 强买入 (持续强买入)
-stock_strong.to_csv(f"{base_name}_Stock_StrongBuy.csv", index=False)
-etf_strong.to_csv(f"{base_name}_ETF_StrongBuy.csv", index=False)
+stock_strong.to_csv(os.path.join(RESULTS_DIR, f"{base_name}_Stock_StrongBuy.csv"), index=False)
+etf_strong.to_csv(os.path.join(RESULTS_DIR, f"{base_name}_ETF_StrongBuy.csv"), index=False)
 
 # ✅ 买入
-stock_buy.to_csv(f"{base_name}_Stock_Buy.csv", index=False)
-etf_buy.to_csv(f"{base_name}_ETF_Buy.csv", index=False)
+stock_buy.to_csv(os.path.join(RESULTS_DIR, f"{base_name}_Stock_Buy.csv"), index=False)
+etf_buy.to_csv(os.path.join(RESULTS_DIR, f"{base_name}_ETF_Buy.csv"), index=False)
 
 # 汇总统计
-industry_summary.to_csv(f"{base_name}_Category_Summary.csv", index=False)
+industry_summary.to_csv(os.path.join(RESULTS_DIR, f"{base_name}_Category_Summary.csv"), index=False)
 
 # ETF总览CSV
 if not df_etf_overview.empty:
-    df_etf_overview.to_csv(f"{base_name}_ETF_Overview.csv", index=False)
+    df_etf_overview.to_csv(os.path.join(RESULTS_DIR, f"{base_name}_ETF_Overview.csv"), index=False)
 else:
     pd.DataFrame(columns=["ETF","收盘价","RSI","站上MA20","站上MA50","MACD>Signal","MA20上升","MA50上升","与MA20偏离%","与MA50偏离%"])\
-      .to_csv(f"{base_name}_ETF_Overview.csv", index=False)
+      .to_csv(os.path.join(RESULTS_DIR, f"{base_name}_ETF_Overview.csv"), index=False)
 
 # 创建一个汇总的所有结果文件
 if not df_result_sorted.empty:
-    df_result_sorted.to_csv(f"{base_name}_All_Results.csv", index=False)
+    df_result_sorted.to_csv(os.path.join(RESULTS_DIR, f"{base_name}_All_Results.csv"), index=False)
 
 print(f"✅ 扫描完成，文件已生成：")
+print(f"📁 结果文件夹: {RESULTS_DIR}")
 print(f"📊 Excel文件: {OUTPUT_PATH}")
 print(f"📄 CSV文件:")
 print(f"   🔥 新强买入 (最佳买入时机):")
@@ -688,6 +697,7 @@ print(f"   📊 其他文件:")
 print(f"     - {base_name}_ETF_Overview.csv (所有ETF概览)")
 print(f"     - {base_name}_Category_Summary.csv (分类汇总)")
 print(f"     - {base_name}_All_Results.csv (所有合格标的)")
+print(f"\n📁 所有文件已保存到: {RESULTS_DIR}")
 
 # 显示最佳投资机会（优先显示新强买入）
 if not df_result_sorted.empty:
