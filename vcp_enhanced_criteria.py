@@ -19,7 +19,7 @@ from datetime import datetime, timedelta
 import time
 import json
 import os
-from stock_symbols_2000 import STOCK_SYMBOLS, ETF_SYMBOLS
+from stock_symbols_1243 import STOCK_SYMBOLS, ETF_SYMBOLS
 import warnings
 warnings.filterwarnings('ignore')
 
