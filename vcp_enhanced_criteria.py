@@ -489,62 +489,65 @@ def scan_enhanced_vcp_patterns(symbols, min_score=10):
                 results.append(result)
                 stats['min_score_met'] += 1
                 
-                # Display found VCP with detailed criteria breakdown
+                # Display found VCP - detailed breakdown only for top scores (21+)
                 category = result['vcp_category']
                 score = result['total_score']
                 price = result['current_price']
                 change = result['price_change_pct']
                 market_cap_b = result['market_cap_billions']
                 
-                # Get criteria details
-                criteria = result['criteria_met']
-                scores = result['component_scores']
-                details = result['analysis_details']
-                
                 print(f"\n{category}: {symbol} | 总分:{score}/30 | ${price} ({change:+.1f}%) | 市值${market_cap_b:.1f}B")
-                print(f"   📊 评分详情: 趋势{scores['trend_score']}/10 + 突破{scores['breakout_score']}/6 + 低点{scores['higher_lows_score']}/3 + 成交量{scores['volume_score']}/6")
                 
-                # Trend Template Details (10 criteria)
-                trend_details = details['trend_template']
-                trend_status = []
-                trend_status.append("✅MA50" if trend_details.get('price_above_ma50') else "❌MA50")
-                trend_status.append("✅MA150" if trend_details.get('price_above_ma150') else "❌MA150")
-                trend_status.append("✅MA200" if trend_details.get('price_above_ma200') else "❌MA200")
-                trend_status.append("✅MA排列" if trend_details.get('ma50_above_ma150') and trend_details.get('ma150_above_ma200') else "❌MA排列")
-                trend_status.append("✅MA200上升" if trend_details.get('ma200_rising') else "❌MA200上升")
-                trend_status.append("✅25%高点" if trend_details.get('within_25pct_high') else "❌25%高点")
-                trend_status.append("✅30%低点" if trend_details.get('above_30pct_52w_low') else "❌30%低点")
-                trend_status.append("✅相对强度" if trend_details.get('relative_strength') else "❌相对强度")
-                print(f"   🎯 趋势模板({trend_details.get('criteria_met', 0)}/10): {' '.join(trend_status)}")
-                
-                # Breakout Details
-                breakout_details = details['breakout']
-                breakout_status = []
-                breakout_status.append("✅近期高点" if breakout_details.get('near_100day_high') else "❌近期高点")
-                breakout_status.append("✅7%日线" if breakout_details.get('within_7pct_daily_high') else "❌7%日线")
-                breakout_status.append("✅20%周线" if breakout_details.get('within_20pct_weekly_high') else "❌20%周线")
-                breakout_status.append("✅未突破" if breakout_details.get('below_daily_high') else "❌已突破")
-                print(f"   🚀 接近突破: {' '.join(breakout_status)}")
-                
-                # Higher Lows Details
-                higher_lows_details = details['higher_lows']
-                higher_lows_status = []
-                higher_lows_status.append("✅10日" if higher_lows_details.get('higher_low_10d') else "❌10日")
-                higher_lows_status.append("✅20日" if higher_lows_details.get('higher_low_20d') else "❌20日")
-                higher_lows_status.append("✅30日" if higher_lows_details.get('higher_low_30d') else "❌30日")
-                print(f"   📈 更高低点: {' '.join(higher_lows_status)}")
-                
-                # Volume Contraction Details
-                volume_details = details['volume']
-                contracting_signals = volume_details.get('contracting_signals', 0)
-                total_signals = volume_details.get('total_signals', 6)
-                volume_status = []
-                for period in [5, 10, 15, 20, 25, 30]:
-                    if volume_details.get(f'volume_contracting_{period}d'):
-                        volume_status.append(f"✅{period}日")
-                    else:
-                        volume_status.append(f"❌{period}日")
-                print(f"   📊 成交量萎缩({contracting_signals}/{total_signals}): {' '.join(volume_status)}")
+                # Show detailed breakdown only for high-scoring stocks (21+ points)
+                if score >= 21:
+                    # Get criteria details
+                    criteria = result['criteria_met']
+                    scores = result['component_scores']
+                    details = result['analysis_details']
+                    
+                    print(f"   📊 评分详情: 趋势{scores['trend_score']}/10 + 突破{scores['breakout_score']}/6 + 低点{scores['higher_lows_score']}/3 + 成交量{scores['volume_score']}/6")
+                    
+                    # Trend Template Details (10 criteria)
+                    trend_details = details['trend_template']
+                    trend_status = []
+                    trend_status.append("✅MA50" if trend_details.get('price_above_ma50') else "❌MA50")
+                    trend_status.append("✅MA150" if trend_details.get('price_above_ma150') else "❌MA150")
+                    trend_status.append("✅MA200" if trend_details.get('price_above_ma200') else "❌MA200")
+                    trend_status.append("✅MA排列" if trend_details.get('ma50_above_ma150') and trend_details.get('ma150_above_ma200') else "❌MA排列")
+                    trend_status.append("✅MA200上升" if trend_details.get('ma200_rising') else "❌MA200上升")
+                    trend_status.append("✅25%高点" if trend_details.get('within_25pct_high') else "❌25%高点")
+                    trend_status.append("✅30%低点" if trend_details.get('above_30pct_52w_low') else "❌30%低点")
+                    trend_status.append("✅相对强度" if trend_details.get('relative_strength') else "❌相对强度")
+                    print(f"   🎯 趋势模板({trend_details.get('criteria_met', 0)}/10): {' '.join(trend_status)}")
+                    
+                    # Breakout Details
+                    breakout_details = details['breakout']
+                    breakout_status = []
+                    breakout_status.append("✅近期高点" if breakout_details.get('near_100day_high') else "❌近期高点")
+                    breakout_status.append("✅7%日线" if breakout_details.get('within_7pct_daily_high') else "❌7%日线")
+                    breakout_status.append("✅20%周线" if breakout_details.get('within_20pct_weekly_high') else "❌20%周线")
+                    breakout_status.append("✅未突破" if breakout_details.get('below_daily_high') else "❌已突破")
+                    print(f"   🚀 接近突破: {' '.join(breakout_status)}")
+                    
+                    # Higher Lows Details
+                    higher_lows_details = details['higher_lows']
+                    higher_lows_status = []
+                    higher_lows_status.append("✅10日" if higher_lows_details.get('higher_low_10d') else "❌10日")
+                    higher_lows_status.append("✅20日" if higher_lows_details.get('higher_low_20d') else "❌20日")
+                    higher_lows_status.append("✅30日" if higher_lows_details.get('higher_low_30d') else "❌30日")
+                    print(f"   📈 更高低点: {' '.join(higher_lows_status)}")
+                    
+                    # Volume Contraction Details
+                    volume_details = details['volume']
+                    contracting_signals = volume_details.get('contracting_signals', 0)
+                    total_signals = volume_details.get('total_signals', 6)
+                    volume_status = []
+                    for period in [5, 10, 15, 20, 25, 30]:
+                        if volume_details.get(f'volume_contracting_{period}d'):
+                            volume_status.append(f"✅{period}日")
+                        else:
+                            volume_status.append(f"❌{period}日")
+                    print(f"   📊 成交量萎缩({contracting_signals}/{total_signals}): {' '.join(volume_status)}")
             
             time.sleep(0.1)  # Rate limiting
             
