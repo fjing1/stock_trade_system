@@ -207,6 +207,27 @@ def check_trend_template(daily_data):
     
     # Need at least 8 out of 10 criteria for trend template
     trend_template_met = criteria_met >= 8
+    
+    # Stage 2 identification (stricter criteria)
+    stage2_criteria = 0
+    if price_above_ma50 and price_above_ma150 and price_above_ma200:
+        stage2_criteria += 1
+    if ma50_above_ma150 and ma150_above_ma200:
+        stage2_criteria += 1
+    if ma200_rising:
+        stage2_criteria += 1
+    if within_25pct_high:
+        stage2_criteria += 1
+    if above_30pct_low:
+        stage2_criteria += 1
+    if relative_strength_good:
+        stage2_criteria += 1
+    
+    # Stage 2 requires all 6 key criteria
+    is_stage2 = stage2_criteria >= 6
+    details['is_stage2'] = is_stage2
+    details['stage2_criteria_met'] = stage2_criteria
+    
     return trend_template_met, score, details
 
 def check_uptrend_nearing_breakout(daily_data, weekly_data):
@@ -346,8 +367,17 @@ def enhanced_vcp_scan(symbol):
         # Calculate total score
         total_score = trend_score + breakout_score + higher_lows_score + volume_score
         
-        # Determine VCP category
-        if total_score >= 20:
+        # Check if stock is in Stage 2
+        is_stage2 = trend_details.get('is_stage2', False)
+        
+        # Determine VCP category with Stage 2 identification
+        if is_stage2 and total_score >= 20:
+            vcp_category = "🚀 Stage2优秀VCP"
+        elif is_stage2 and total_score >= 15:
+            vcp_category = "📈 Stage2良好VCP"
+        elif is_stage2 and total_score >= 10:
+            vcp_category = "✅ Stage2一般VCP"
+        elif total_score >= 20:
             vcp_category = "🔥 优秀增强VCP"
         elif total_score >= 15:
             vcp_category = "⭐ 良好增强VCP"
@@ -409,6 +439,7 @@ def scan_enhanced_vcp_patterns(symbols, min_score=10):
         'data_available': 0,
         'market_cap_qualified': 0,
         'trend_template_met': 0,
+        'stage2_stocks': 0,
         'breakout_ready': 0,
         'higher_lows_confirmed': 0,
         'volume_contracting': 0,
@@ -450,6 +481,10 @@ def scan_enhanced_vcp_patterns(symbols, min_score=10):
                     if trend_met:
                         stats['trend_template_met'] += 1
                     
+                    # Stage 2 statistics
+                    if trend_details.get('is_stage2', False):
+                        stats['stage2_stocks'] += 1
+                    
                     # Detailed trend template statistics
                     if trend_details.get('price_above_ma50', False):
                         stats['price_above_ma50'] += 1
@@ -457,7 +492,7 @@ def scan_enhanced_vcp_patterns(symbols, min_score=10):
                         stats['price_above_ma150'] += 1
                     if trend_details.get('price_above_ma200', False):
                         stats['price_above_ma200'] += 1
-                    if (trend_details.get('ma50_above_ma150', False) and 
+                    if (trend_details.get('ma50_above_ma150', False) and
                         trend_details.get('ma150_above_ma200', False)):
                         stats['ma_alignment_correct'] += 1
                     if trend_details.get('ma200_rising', False):
@@ -496,14 +531,19 @@ def scan_enhanced_vcp_patterns(symbols, min_score=10):
                 change = result['price_change_pct']
                 market_cap_b = result['market_cap_billions']
                 
-                print(f"\n{category}: {symbol} | 总分:{score}/30 | ${price} ({change:+.1f}%) | 市值${market_cap_b:.1f}B")
+                # Get criteria details
+                criteria = result['criteria_met']
+                scores = result['component_scores']
+                details = result['analysis_details']
+                
+                # Check if this is a Stage 2 stock
+                is_stage2 = details['trend_template'].get('is_stage2', False)
+                stage2_indicator = " [Stage2]" if is_stage2 else ""
+                
+                print(f"\n{category}: {symbol} | 总分:{score}/30 | ${price} ({change:+.1f}%) | 市值${market_cap_b:.1f}B{stage2_indicator}")
                 
                 # Show detailed breakdown only for high-scoring stocks (21+ points)
                 if score >= 21:
-                    # Get criteria details
-                    criteria = result['criteria_met']
-                    scores = result['component_scores']
-                    details = result['analysis_details']
                     
                     print(f"   📊 评分详情: 趋势{scores['trend_score']}/10 + 突破{scores['breakout_score']}/6 + 低点{scores['higher_lows_score']}/3 + 成交量{scores['volume_score']}/6")
                     
@@ -566,6 +606,7 @@ def scan_enhanced_vcp_patterns(symbols, min_score=10):
     print(f"   💰 市值≥$1B: {stats['market_cap_qualified']}/{processed} ({stats['market_cap_qualified']/processed*100:.1f}%)")
     print(f"   📈 数据可用: {stats['data_available']}/{processed} ({stats['data_available']/processed*100:.1f}%)")
     print(f"   🎯 趋势模板达标: {stats['trend_template_met']}/{processed} ({stats['trend_template_met']/processed*100:.1f}%)")
+    print(f"   🚀 Stage2股票: {stats['stage2_stocks']}/{processed} ({stats['stage2_stocks']/processed*100:.1f}%)")
     print(f"   🚀 接近突破: {stats['breakout_ready']}/{processed} ({stats['breakout_ready']/processed*100:.1f}%)")
     print(f"   📈 更高低点: {stats['higher_lows_confirmed']}/{processed} ({stats['higher_lows_confirmed']/processed*100:.1f}%)")
     print(f"   📊 成交量萎缩: {stats['volume_contracting']}/{processed} ({stats['volume_contracting']/processed*100:.1f}%)")
@@ -589,7 +630,170 @@ def scan_enhanced_vcp_patterns(symbols, min_score=10):
     print(f"   - 平均速度: {processed/(total_time/60):.1f}个/分钟")
     print(f"   - 增强VCP发现率: {len(results)/processed*100:.2f}%")
     
+    # Save top VCP results to markdown file
+    save_vcp_results_to_markdown(results)
+    
     return results
+
+def save_vcp_results_to_markdown(results):
+    """Save top VCP results to markdown file in results folder"""
+    if not results:
+        return
+    
+    # Create filename with current date
+    current_date = datetime.now().strftime('%Y%m%d')
+    filename = f"{current_date}-vcp.md"
+    filepath = os.path.join(RESULTS_DIR, filename)
+    
+    # Sort results by score (highest first)
+    top_results = sorted(results, key=lambda x: x['total_score'], reverse=True)
+    
+    # Generate markdown content
+    markdown_content = f"""# VCP Pattern Analysis Report - {datetime.now().strftime('%Y-%m-%d')}
+
+## 📊 Enhanced VCP (Volatility Contraction Pattern) Detection Results
+**Based on Mark Minervini's Trend Template + Advanced Technical Analysis**
+
+### 🎯 Scan Summary
+- **Total Stocks Analyzed**: {len(results)}
+- **Date**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+- **Methodology**: Mark Minervini 10-Point Trend Template + VCP Pattern Recognition
+- **Minimum Score**: 10/30 points
+
+---
+
+## 🏆 Top VCP Candidates
+
+"""
+    
+    # Add top 20 results with detailed breakdown
+    for i, result in enumerate(top_results[:20], 1):
+        symbol = result['symbol']
+        category = result['vcp_category']
+        score = result['total_score']
+        price = result['current_price']
+        change = result['price_change_pct']
+        market_cap_b = result['market_cap_billions']
+        
+        # Check if Stage 2
+        is_stage2 = result['analysis_details']['trend_template'].get('is_stage2', False)
+        stage2_badge = " 🚀 **STAGE 2**" if is_stage2 else ""
+        
+        # Component scores
+        scores = result['component_scores']
+        trend_score = scores['trend_score']
+        breakout_score = scores['breakout_score']
+        higher_lows_score = scores['higher_lows_score']
+        volume_score = scores['volume_score']
+        
+        markdown_content += f"""### {i}. **{symbol}** - {category}{stage2_badge}
+
+**📈 Stock Info:**
+- **Price**: ${price} ({change:+.1f}%)
+- **Market Cap**: ${market_cap_b:.1f}B
+- **Total Score**: {score}/30 points
+
+**📊 Component Scores:**
+- **Trend Template**: {trend_score}/10
+- **Breakout Readiness**: {breakout_score}/6
+- **Higher Lows**: {higher_lows_score}/3
+- **Volume Contraction**: {volume_score}/6
+
+"""
+        
+        # Add detailed analysis for top 10 stocks
+        if i <= 10:
+            details = result['analysis_details']
+            
+            # Trend Template Details
+            trend_details = details['trend_template']
+            markdown_content += f"""**🎯 Mark Minervini Trend Template ({trend_details.get('criteria_met', 0)}/10):**
+- Price > MA50: {'✅' if trend_details.get('price_above_ma50') else '❌'}
+- Price > MA150: {'✅' if trend_details.get('price_above_ma150') else '❌'}
+- Price > MA200: {'✅' if trend_details.get('price_above_ma200') else '❌'}
+- MA Alignment: {'✅' if trend_details.get('ma50_above_ma150') and trend_details.get('ma150_above_ma200') else '❌'}
+- MA200 Rising: {'✅' if trend_details.get('ma200_rising') else '❌'}
+- Within 25% of High: {'✅' if trend_details.get('within_25pct_high') else '❌'}
+- Above 30% of Low: {'✅' if trend_details.get('above_30pct_52w_low') else '❌'}
+- Relative Strength: {'✅' if trend_details.get('relative_strength') else '❌'}
+
+"""
+            
+            # Breakout Analysis
+            breakout_details = details['breakout']
+            markdown_content += f"""**🚀 Breakout Readiness:**
+- Near 100-day High: {'✅' if breakout_details.get('near_100day_high') else '❌'}
+- Within 7% Daily High: {'✅' if breakout_details.get('within_7pct_daily_high') else '❌'}
+- Within 20% Weekly High: {'✅' if breakout_details.get('within_20pct_weekly_high') else '❌'}
+- Below Resistance: {'✅' if breakout_details.get('below_daily_high') else '❌'}
+
+"""
+            
+            # Higher Lows Pattern
+            higher_lows_details = details['higher_lows']
+            markdown_content += f"""**📈 Higher Lows Pattern:**
+- 10-day Higher Lows: {'✅' if higher_lows_details.get('higher_low_10d') else '❌'}
+- 20-day Higher Lows: {'✅' if higher_lows_details.get('higher_low_20d') else '❌'}
+- 30-day Higher Lows: {'✅' if higher_lows_details.get('higher_low_30d') else '❌'}
+
+"""
+            
+            # Volume Analysis
+            volume_details = details['volume']
+            contracting_signals = volume_details.get('contracting_signals', 0)
+            total_signals = volume_details.get('total_signals', 6)
+            markdown_content += f"""**📊 Volume Contraction ({contracting_signals}/{total_signals}):**
+- 5-day: {'✅' if volume_details.get('volume_contracting_5d') else '❌'}
+- 10-day: {'✅' if volume_details.get('volume_contracting_10d') else '❌'}
+- 15-day: {'✅' if volume_details.get('volume_contracting_15d') else '❌'}
+- 20-day: {'✅' if volume_details.get('volume_contracting_20d') else '❌'}
+- 25-day: {'✅' if volume_details.get('volume_contracting_25d') else '❌'}
+- 30-day: {'✅' if volume_details.get('volume_contracting_30d') else '❌'}
+
+---
+
+"""
+        else:
+            markdown_content += "---\n\n"
+    
+    # Add methodology section
+    markdown_content += f"""## 📚 Methodology
+
+### Mark Minervini's 10-Point Trend Template
+1. **Price above 50-day MA**: Stock price must be above 50-day moving average
+2. **Price above 150-day MA**: Stock price must be above 150-day moving average
+3. **Price above 200-day MA**: Stock price must be above 200-day moving average
+4. **MA Alignment**: 50-day > 150-day > 200-day moving averages
+5. **MA200 Rising**: 200-day moving average trending upward
+6. **Within 25% of High**: Current price within 25% of 52-week high
+7. **Above 30% of Low**: Current price at least 30% above 52-week low
+8. **Relative Strength**: Positive 3-month price performance
+
+### VCP Pattern Components
+- **Breakout Readiness** (6 points): Proximity to breakout levels
+- **Higher Lows Pattern** (3 points): Constructive pullback pattern
+- **Volume Contraction** (6 points): Decreasing volume during consolidation
+
+### Stage 2 Identification
+Stocks meeting all 6 core Stage 2 criteria are marked as **STAGE 2** candidates:
+- All moving averages properly aligned
+- 200-day MA rising
+- Near 52-week highs
+- Strong relative performance
+
+---
+
+*Generated by Enhanced VCP Pattern Detector*
+*Based on Mark Minervini's "Think & Trade Like a Champion" methodology*
+"""
+    
+    # Write to file
+    try:
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(markdown_content)
+        print(f"\n💾 VCP分析报告已保存: {filepath}")
+    except Exception as e:
+        print(f"❌ 保存VCP报告失败: {e}")
 
 def main():
     """Main function for enhanced VCP scanning"""
