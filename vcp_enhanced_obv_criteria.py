@@ -6,12 +6,11 @@ Based on Mark Minervini's Trend Template + OBV 21-day MA Analysis
  
 Enhanced Selection Criteria (35-Point System):
 1. Trend Template Met (Mark Minervini's 10 criteria) - 10 points
-2. Market Cap > $1 billion
-3. Uptrend Nearing Breakout - 6 points
+2. Market Cap > $100 million
+3. Uptrend Nearing Breakout - 7 points
 4. Higher Lows Pattern - 3 points
 5. Volume Contracting - 6 points
-6. OBV 21-day MA Trending Up - 5 points (NEW)
-7. OBV Accumulation Signal - 5 points (NEW)
+6. OBV Analysis - 9 points (OBV 21-day MA: 3pts + Accumulation: 3pts + Price Higher Lows: 3pts)
 """
 
 import yfinance as yf
@@ -22,14 +21,31 @@ from datetime import datetime, timedelta
 import time
 import json
 import os
+import signal
+import sys
 from stock_symbols_1243 import STOCK_SYMBOLS, ETF_SYMBOLS
 import warnings
 warnings.filterwarnings('ignore')
 
+# Global variable to handle graceful shutdown
+scan_interrupted = False
+
+def signal_handler(signum, frame):
+    """Handle Ctrl+C gracefully"""
+    global scan_interrupted
+    scan_interrupted = True
+    print(f"\n⚠️  扫描中断信号接收! 正在安全停止...")
+    print("   - 当前股票分析完成后将停止")
+    print("   - 已处理的结果将被保存")
+    print("   - 按 Ctrl+C 再次强制退出")
+
+# Set up signal handler for graceful shutdown
+signal.signal(signal.SIGINT, signal_handler)
+
 # ============ Enhanced VCP Selection Criteria with OBV ============
 ENHANCED_VCP_OBV_CONFIG = {
-    "data_period": "2y",  # Need 2 years for weekly data and comprehensive analysis
-    "market_cap_min": 1_000_000_000,  # $1 billion minimum market cap
+    "data_period": "400d",  # Need more than 252 days for 52-week calculations
+    "market_cap_min": 100_000_000,  # $100 million minimum market cap
     "trend_template_criteria": {
         "price_above_ma50": True,
         "price_above_ma150": True,
@@ -63,8 +79,8 @@ DATE_FOLDER = datetime.now().strftime('%Y%m%d')
 RESULTS_DIR = os.path.join(RESULTS_BASE_DIR, DATE_FOLDER)
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
-def get_enhanced_stock_data_with_obv(symbol, period="2y"):
-    """Get comprehensive stock data for enhanced VCP analysis with OBV"""
+def get_enhanced_stock_data_basic(symbol, period="400d"):
+    """Get basic stock data for enhanced VCP analysis (without OBV for speed)"""
     try:
         # Get daily data
         daily_data = yf.download(symbol, period=period, interval="1d", progress=False, auto_adjust=False)
@@ -72,7 +88,7 @@ def get_enhanced_stock_data_with_obv(symbol, period="2y"):
         # Get weekly data
         weekly_data = yf.download(symbol, period=period, interval="1wk", progress=False, auto_adjust=False)
         
-        if daily_data is None or len(daily_data) < 200:
+        if daily_data is None or len(daily_data) < 300:
             return None, None
         
         # Handle multi-level columns
@@ -90,13 +106,9 @@ def get_enhanced_stock_data_with_obv(symbol, period="2y"):
         # Volume indicators
         daily_data['Volume_MA20'] = daily_data['Volume'].rolling(window=20).mean()
         
-        # OBV Calculations (NEW)
-        daily_data['OBV'] = ta.volume.on_balance_volume(daily_data['Close'], daily_data['Volume'])
-        daily_data['OBV_MA21'] = daily_data['OBV'].rolling(window=21).mean()
-        daily_data['OBV_MA10'] = daily_data['OBV'].rolling(window=10).mean()
-        
         # Range calculations
         daily_data['High_100'] = daily_data['High'].rolling(window=100).max()
+        daily_data['Close_High_50'] = daily_data['Close'].rolling(window=50).max()  # 50-day high of close prices
         daily_data['Low_100'] = daily_data['Low'].rolling(window=100).min()
         daily_data['Low_10'] = daily_data['Low'].rolling(window=10).min()
         daily_data['Low_20'] = daily_data['Low'].rolling(window=20).min()
@@ -111,6 +123,25 @@ def get_enhanced_stock_data_with_obv(symbol, period="2y"):
     except Exception as e:
         print(f"获取 {symbol} 数据失败: {e}")
         return None, None
+
+def add_obv_calculations(daily_data):
+    """Add OBV calculations to existing data (called only when needed)"""
+    try:
+        # OBV Calculations
+        daily_data['OBV'] = ta.volume.on_balance_volume(daily_data['Close'], daily_data['Volume'])
+        daily_data['OBV_MA21'] = daily_data['OBV'].rolling(window=21).mean()
+        daily_data['OBV_MA10'] = daily_data['OBV'].rolling(window=10).mean()
+        return daily_data
+    except Exception as e:
+        print(f"OBV计算失败: {e}")
+        return daily_data
+
+def get_enhanced_stock_data_with_obv(symbol, period="400d"):
+    """Get comprehensive stock data for enhanced VCP analysis with OBV (legacy function)"""
+    daily_data, weekly_data = get_enhanced_stock_data_basic(symbol, period)
+    if daily_data is not None:
+        daily_data = add_obv_calculations(daily_data)
+    return daily_data, weekly_data
 
 def get_market_cap(symbol):
     """Get market capitalization for the stock"""
@@ -146,7 +177,7 @@ def check_obv_trend_analysis(daily_data):
     details['obv_ma21_change_pct'] = round((obv_ma21_current - obv_ma21_10days_ago) / abs(obv_ma21_10days_ago) * 100, 2) if obv_ma21_10days_ago != 0 else 0
     
     if obv_ma21_trending_up:
-        score += 5
+        score += 3
     
     # 2. OBV Accumulation Signal (5 points)
     # OBV rising faster than price (accumulation)
@@ -167,17 +198,17 @@ def check_obv_trend_analysis(daily_data):
     details['obv_vs_price_ratio'] = round(obv_change_pct / price_change_pct, 2) if price_change_pct != 0 else 0
     
     if accumulation_signal:
-        score += 5
+        score += 3
     
     # 3. OBV Short-term vs Long-term MA alignment
     obv_ma_alignment = obv_ma10.iloc[-1] > obv_ma21.iloc[-1] if len(obv_ma10) > 0 and len(obv_ma21) > 0 else False
     details['obv_ma_alignment'] = obv_ma_alignment
     
-    # Bonus point for MA alignment
-    if obv_ma_alignment:
-        score += 1
+    # No bonus point for MA alignment (removed to keep total at 6)
+    # if obv_ma_alignment:
+    #     score += 1
     
-    obv_analysis_confirmed = score >= 5
+    obv_analysis_confirmed = score >= 3
     return obv_analysis_confirmed, score, details
 
 def check_trend_template(daily_data):
@@ -276,8 +307,9 @@ def check_trend_template(daily_data):
     details['criteria_met'] = criteria_met
     details['total_criteria'] = 10
     
-    # Need at least 8 out of 10 criteria for trend template
-    trend_template_met = criteria_met >= 8
+    # UPDATED: Quantitative scoring - score equals criteria_met (1 point per rule)
+    score = criteria_met  # Each rule passed = 1 point (0-10 points possible)
+    trend_template_met = True  # Always continue analysis, no hard limit
     
     # Stage 2 identification (stricter criteria)
     stage2_criteria = 0
@@ -409,24 +441,23 @@ def check_volume_contracting(daily_data):
     return volume_contracting_confirmed, score, details
 
 def enhanced_vcp_obv_scan(symbol):
-    """Enhanced VCP pattern detection with OBV analysis (35-point system)"""
+    """Enhanced VCP pattern detection with OBV analysis (32-point system)"""
     try:
         # Get market cap first
         market_cap = get_market_cap(symbol)
         if market_cap < ENHANCED_VCP_OBV_CONFIG['market_cap_min']:
             return None
         
-        # Get data with OBV
-        daily_data, weekly_data = get_enhanced_stock_data_with_obv(symbol)
+        # Get basic data (without OBV calculations for speed)
+        daily_data, weekly_data = get_enhanced_stock_data_basic(symbol)
         if daily_data is None:
             return None
         
-        # 1. Check Trend Template (10 points)
+        # 1. Check Trend Template (0-10 points, quantitative)
         trend_template_met, trend_score, trend_details = check_trend_template(daily_data)
-        if not trend_template_met:
-            return None
+        # No hard limit - continue analysis regardless of trend score
         
-        # 2. Check Uptrend Nearing Breakout (6 points)
+        # 2. Check Uptrend Nearing Breakout (7 points)
         breakout_ready, breakout_score, breakout_details = check_uptrend_nearing_breakout(daily_data, weekly_data)
         
         # 3. Check Higher Lows (3 points)
@@ -435,10 +466,20 @@ def enhanced_vcp_obv_scan(symbol):
         # 4. Check Volume Contracting (6 points)
         volume_contracting_ok, volume_score, volume_details = check_volume_contracting(daily_data)
         
-        # 5. Check OBV Analysis (10 points)
-        obv_confirmed, obv_score, obv_details = check_obv_trend_analysis(daily_data)
+        # Calculate preliminary score (without OBV)
+        preliminary_score = trend_score + breakout_score + higher_lows_score + volume_score
         
-        # Calculate total score (35-point system)
+        # 5. Check OBV Analysis (10 points) - MOVED TO LAST for performance
+        # Only calculate OBV if preliminary score shows promise
+        if preliminary_score >= 15:  # Only if other criteria look good
+            # Add OBV calculations to data
+            daily_data = add_obv_calculations(daily_data)
+            obv_confirmed, obv_score, obv_details = check_obv_trend_analysis(daily_data)
+        else:
+            # Skip expensive OBV calculations
+            obv_confirmed, obv_score, obv_details = False, 0, {}
+        
+        # Calculate total score (32-point system)
         total_score = trend_score + breakout_score + higher_lows_score + volume_score + obv_score
         
         # Check if stock is in Stage 2
@@ -470,7 +511,7 @@ def enhanced_vcp_obv_scan(symbol):
             "market_cap": market_cap,
             "market_cap_billions": round(market_cap / 1_000_000_000, 2),
             "total_score": total_score,
-            "max_score": 35,
+            "max_score": 32,
             "vcp_category": vcp_category,
             "current_price": round(daily_data['Close'].iloc[-1], 2),
             "price_change_pct": round((daily_data['Close'].iloc[-1] / daily_data['Close'].iloc[-2] - 1) * 100, 2),
@@ -511,15 +552,15 @@ def main():
     
     # Scan options
     print("请选择扫描范围:")
-    print("1. 测试模式 (前50个股票)")
+    print("1. 测试模式 (前25个股票)")
     print("2. 完整扫描 (所有股票)")
     print("3. 自定义股票列表")
     
     choice = input("请输入选择 (1-3): ").strip()
     
     if choice == "1":
-        symbols = STOCK_SYMBOLS[:50]
-        print(f"🧪 测试模式: 扫描前50个股票")
+        symbols = STOCK_SYMBOLS[:25]
+        print(f"🧪 测试模式: 扫描前25个股票")
     elif choice == "2":
         symbols = STOCK_SYMBOLS
         print(f"🔍 完整扫描: 扫描{len(STOCK_SYMBOLS)}个股票")
@@ -529,7 +570,7 @@ def main():
         print(f"📝 自定义扫描: {len(symbols)}个股票")
     else:
         print("❌ 无效选择，使用测试模式")
-        symbols = STOCK_SYMBOLS[:50]
+        symbols = STOCK_SYMBOLS[:25]
     
     # Set minimum score
     min_score_input = input("请输入最低评分 (默认15分): ").strip()
@@ -538,9 +579,10 @@ def main():
     # Start scanning
     print(f"\n🎯 增强VCP+OBV模式扫描 - 基于Mark Minervini趋势模板 + OBV 21日均线")
     print(f"   - 扫描股票数量: {len(symbols)}")
-    print(f"   - 最低评分: {min_score}/35")
-    print(f"   - 市值要求: ≥$1B")
+    print(f"   - 最低评分: {min_score}/32")
+    print(f"   - 市值要求: ≥$100M")
     print(f"   - OBV分析: 21日均线趋势 + 累积信号")
+    print(f"   - 中断扫描: 按 Ctrl+C 安全停止")
     print("=" * 70)
     
     results = []
@@ -550,6 +592,13 @@ def main():
     
     for i, symbol in enumerate(symbols):
         try:
+            # Check for interrupt signal
+            if scan_interrupted:
+                print(f"\n🛑 扫描已中断! 已处理 {processed} 个股票")
+                print(f"   - 发现模式: {len(results)}")
+                print(f"   - 将显示已处理的结果...")
+                break
+            
             # Progress display
             if (i + 1) % 25 == 0 or (i + 1) == len(symbols):
                 elapsed = (datetime.now() - start_time).total_seconds()
@@ -588,7 +637,7 @@ def main():
                     is_stage2 = details['trend_template'].get('is_stage2', False)
                     stage2_indicator = " [Stage2+OBV]" if is_stage2 else ""
                     
-                    print(f"\n{category}: {symbol} | 总分:{score}/35 | ${price} ({change:+.1f}%) | 市值${market_cap_b:.1f}B{stage2_indicator}")
+                    print(f"\n{category}: {symbol} | 总分:{score}/32 | ${price} ({change:+.1f}%) | 市值${market_cap_b:.1f}B{stage2_indicator}")
                     
                     # Show detailed breakdown only for high-scoring stocks (28+ points)
                     if score >= 28:
@@ -600,7 +649,7 @@ def main():
                         obv_status.append("✅OBV21日MA上升" if obv_details.get('obv_ma21_trending_up') else "❌OBV21日MA上升")
                         obv_status.append("✅累积信号" if obv_details.get('accumulation_signal') else "❌累积信号")
                         obv_status.append("✅OBV MA排列" if obv_details.get('obv_ma_alignment') else "❌OBV MA排列")
-                        print(f"   📊 OBV分析({scores['obv_score']}/10): {' '.join(obv_status)} | OBV变化:{obv_details.get('obv_change_21d_pct', 0):.1f}% vs 价格:{obv_details.get('price_change_21d_pct', 0):.1f}%")
+                        print(f"   📊 OBV分析({scores['obv_score']}/6): {' '.join(obv_status)} | OBV变化:{obv_details.get('obv_change_21d_pct', 0):.1f}% vs 价格:{obv_details.get('price_change_21d_pct', 0):.1f}%")
             
             time.sleep(0.1)  # Rate limiting
             
@@ -615,13 +664,16 @@ def main():
     total_time = (datetime.now() - start_time).total_seconds()
     
     # Display results summary
-    print(f"\n📊 扫描完成统计:")
+    status = "中断" if scan_interrupted else "完成"
+    print(f"\n📊 扫描{status}统计:")
     print(f"   - 处理股票: {processed}")
     print(f"   - 发现增强VCP+OBV: {len(results)}")
     print(f"   - 错误数量: {errors}")
     print(f"   - 总用时: {total_time/60:.1f}分钟")
     print(f"   - 平均速度: {processed/(total_time/60):.1f}个/分钟")
     print(f"   - 增强VCP+OBV发现率: {len(results)/processed*100:.2f}%")
+    if scan_interrupted:
+        print(f"   - 剩余未处理: {len(symbols) - processed} 个股票")
     
     # Display final results
     if results:
@@ -635,7 +687,7 @@ def main():
             change = result['price_change_pct']
             market_cap_b = result['market_cap_billions']
             obv_score = result['component_scores']['obv_score']
-            print(f"{i+1:2d}. {category} {symbol:>6} | {score:2d}/35分 | ${price:>8.2f} ({change:+6.1f}%) | ${market_cap_b:.1f}B | OBV:{obv_score}/10")
+            print(f"{i+1:2d}. {category} {symbol:>6} | {score:2d}/32分 | ${price:>8.2f} ({change:+6.1f}%) | ${market_cap_b:.1f}B | OBV:{obv_score}/6")
     else:
         print("❌ 未发现符合条件的增强VCP+OBV模式")
 
