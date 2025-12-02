@@ -106,6 +106,16 @@ def get_enhanced_stock_data_basic(symbol, period="400d"):
         # Volume indicators
         daily_data['Volume_MA20'] = daily_data['Volume'].rolling(window=20).mean()
         
+        # ATR (Average True Range) calculation for volatility-adjusted breakout detection
+        daily_data['TR'] = np.maximum(
+            daily_data['High'] - daily_data['Low'],
+            np.maximum(
+                abs(daily_data['High'] - daily_data['Close'].shift(1)),
+                abs(daily_data['Low'] - daily_data['Close'].shift(1))
+            )
+        )
+        daily_data['ATR14'] = daily_data['TR'].rolling(window=14).mean()
+        
         # Range calculations
         daily_data['High_100'] = daily_data['High'].rolling(window=100).max()
         daily_data['Close_High_50'] = daily_data['Close'].rolling(window=50).max()  # 50-day high of close prices
@@ -436,6 +446,45 @@ def check_uptrend_nearing_breakout(daily_data, weekly_data):
     details['below_daily_high'] = below_daily_high
     if below_daily_high:
         score += 1
+    
+    # 5. Check if stock has already broken out in last 5 days using ATR (PENALTY)
+    # Use Average True Range to adapt to stock's volatility instead of fixed 5%
+    if len(daily_data) >= 20:  # Need enough data for ATR14
+        price_5_days_ago = daily_data['Close'].iloc[-6]  # 5 days ago (including today)
+        price_change_5d = current_price - price_5_days_ago
+        price_change_5d_pct = (price_change_5d / price_5_days_ago) * 100
+        
+        # Get current ATR (14-day Average True Range)
+        current_atr = daily_data['ATR14'].iloc[-1]
+        atr_as_pct = (current_atr / current_price) * 100
+        
+        # ATR-based breakout threshold: if 5-day move > 2x ATR, consider already broken out
+        # This adapts to each stock's volatility (high volatility stocks need bigger moves)
+        atr_breakout_threshold = 2.0 * current_atr
+        already_broken_out = price_change_5d > atr_breakout_threshold
+        
+        details['already_broken_out'] = already_broken_out
+        details['price_5_days_ago'] = round(price_5_days_ago, 2)
+        details['price_change_5d_pct'] = round(price_change_5d_pct, 2)
+        details['price_change_5d_abs'] = round(price_change_5d, 2)
+        details['current_atr'] = round(current_atr, 2)
+        details['atr_as_pct'] = round(atr_as_pct, 2)
+        details['atr_breakout_threshold'] = round(atr_breakout_threshold, 2)
+        details['atr_threshold_pct'] = round((atr_breakout_threshold / current_price) * 100, 2)
+        
+        # Deduct points if already broken out (poor risk/reward)
+        if already_broken_out:
+            penalty = min(score, 3)  # Deduct up to 3 points, but not below 0
+            score -= penalty
+            details['breakout_penalty'] = penalty
+        else:
+            details['breakout_penalty'] = 0
+    else:
+        details['already_broken_out'] = False
+        details['price_change_5d_pct'] = 0
+        details['breakout_penalty'] = 0
+        details['current_atr'] = 0
+        details['atr_as_pct'] = 0
     
     breakout_ready = score >= 4
     return breakout_ready, score, details

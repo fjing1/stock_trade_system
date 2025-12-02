@@ -35,17 +35,17 @@ HEALTHCARE_STOCKS = [
     "AMGN", "MDT", "ISRG", "GILD", "VRTX", "REGN", "ZTS", "CI", "CVS", "HUM",
     "ANTM", "ELV", "CNC", "MOH", "HCA", "UHS", "THC", "CYH", "LPLA", "DVA",
     "BIIB", "CELG", "ILMN", "MRNA", "BNTX", "NVAX", "INO", "SRNE", "VXRT", "TDOC",
-    "VEEV", "DXCM", "INTUV", "ALGN", "HOLX", "TECH", "A", "GEHC", "BSX", "SYK",
-    "EW", "ZIMMER", "HRC", "RVTY", "SOLV", "PODD", "TANDEM", "OMCL", "JAZZ", "HALO",
+    "VEEV", "DXCM", "ALGN", "HOLX", "TECH", "A", "GEHC", "BSX", "SYK",
+    "EW", "HRC", "RVTY", "SOLV", "PODD", "OMCL", "JAZZ", "HALO",
     "BMRN", "RARE", "FOLD", "ARWR", "EDIT", "CRSP", "NTLA", "BEAM", "BLUE", "SAGE",
     "IONS", "ACAD", "PTCT", "ALNY", "RGNX", "TECH", "VCEL", "FATE", "CRBU", "VERV",
-    "PRIME", "CGEM", "AGIO", "ARCT", "MRVI", "KROS", "RVMD", "SGEN", "SEAG", "IMMU",
-    "GOSS", "ADCT", "IMGN", "DCPH", "MRSN", "KYMR", "CART", "AMED", "ENSG", "HSIC",
-    "PDCO", "POOL", "WST", "PKI", "DXCM", "ISRG", "INTUV", "ALGN", "HOLX", "TECH",
-    "A", "GEHC", "BSX", "SYK", "EW", "ZIMMER", "HRC", "RVTY", "SOLV", "PODD",
-    "TANDEM", "OMCL", "JAZZ", "HALO", "BMRN", "RARE", "FOLD", "ARWR", "EDIT", "CRSP",
+    "CGEM", "AGIO", "ARCT", "MRVI", "KROS", "RVMD", "SGEN", "SEAG", "IMMU",
+    "GOSS", "ADCT", "IMGN", "DCPH", "MRSN", "KYMR", "CART", "ENSG", "HSIC",
+    "PDCO", "POOL", "WST", "PKI", "DXCM", "ISRG", "ALGN", "HOLX", "TECH",
+    "A", "GEHC", "BSX", "SYK", "EW", "HRC", "RVTY", "SOLV", "PODD",
+    "OMCL", "JAZZ", "HALO", "BMRN", "RARE", "FOLD", "ARWR", "EDIT", "CRSP",
     "NTLA", "BEAM", "BLUE", "SAGE", "IONS", "ACAD", "PTCT", "ALNY", "RGNX", "VCEL",
-    "FATE", "CRBU", "VERV", "PRIME", "CGEM", "AGIO", "ARCT", "MRVI", "KROS", "RVMD",
+    "FATE", "CRBU", "VERV", "CGEM", "AGIO", "ARCT", "MRVI", "KROS", "RVMD",
     "SGEN", "SEAG", "IMMU", "GOSS", "ADCT", "IMGN", "DCPH", "MRSN", "KYMR", "CART",
     "AAON", "ABCB", "ABMD", "ACAD", "ACHC", "ACLS", "ADMA", "ADMP", "ADMS", "ADPT",
     "AEMD", "AERI", "AFIB", "AFMD", "AGEN", "AGFS", "AGIO", "AIMC", "AKBA", "AKRO",
@@ -89,7 +89,7 @@ FINANCIAL_STOCKS = [
     "PRU", "RE", "RGA", "ROOT", "RYI", "SAFT", "SEIC", "STC", "THG", "TRV",
     "UNM", "WRB", "Y", "AAON", "ABCB", "ACGL", "ACHC", "ACLS", "AEIS", "AFYA",
     "AGCO", "AGNC", "AIMC", "AINV", "AIRT", "AKTS", "ALCO", "ALEX", "ALGM", "ALGT",
-    "ALHC", "ALKS", "ALRM", "ALTR", "AMBC", "AMCR", "AMCX", "AMED", "AMEH", "AMG"
+    "ALHC", "ALKS", "ALRM", "ALTR", "AMBC", "AMCR", "AMCX", "AMEH", "AMG"
 ]
 
 # Consumer Discretionary (250 stocks)
@@ -135,7 +135,7 @@ CONSUMER_STAPLES = [
     "SEB", "POST", "LWAY", "JJSF", "RIBT", "SENEA", "SENEB", "CALM", "SAFM", "AAON",
     "ABCB", "ABMD", "ACGL", "ACHC", "ACLS", "AEIS", "AFYA", "AGCO", "AGNC", "AIMC",
     "AINV", "AIRT", "AKTS", "ALCO", "ALEX", "ALGM", "ALGT", "ALHC", "ALKS", "ALRM",
-    "ALTR", "AMBC", "AMCR", "AMCX", "AMED", "AMEH", "AMG", "AMGN", "AMKR", "AMNB",
+    "ALTR", "AMBC", "AMCR", "AMCX", "AMEH", "AMG", "AMGN", "AMKR", "AMNB",
     "AMOT", "AMPH", "AMRC", "AMRK", "AMRN", "AMRS", "AMSC", "AMSF", "AMTB", "AMTD",
     "AMWD", "ANAB", "ANAT", "ANCN", "ANDE", "ANET", "ANGI", "ANIP"
 ]
@@ -178,7 +178,7 @@ MATERIALS_INDUSTRIALS = [
     "TOWN", "HOPE", "WAFD", "FFIN", "FULT", "WSFS", "NBTB", "ONB", "UBSI",
     "AAON", "ABCB", "ABMD", "ACGL", "ACHC", "ACLS", "AEIS", "AFYA", "AGCO", "AGNC",
     "AIMC", "AINV", "AIRT", "AKTS", "ALCO", "ALEX", "ALGM", "ALGT", "ALHC", "ALKS",
-    "ALRM", "ALTR", "AMBC", "AMCR", "AMCX", "AMED", "AMEH", "AMG", "AMGN", "AMKR",
+    "ALRM", "ALTR", "AMBC", "AMCR", "AMCX", "AMEH", "AMG", "AMGN", "AMKR",
     "AMNB", "AMOT", "AMPH", "AMRC", "AMRK", "AMRN", "AMRS", "AMSC", "AMSF", "AMTB",
     "AMTD", "AMWD", "ANAB", "ANAT", "ANCN", "ANDE", "ANET", "ANGI", "ANIP",
     "ANTM", "AOSL", "AOUT", "APA", "APAM", "APLE", "APLS", "APOG", "APPF",
