@@ -1,5 +1,4 @@
-
-#!/usr/bin/env python3
+#!/opt/homebrew/opt/python@3.12/bin/python3.12
 """
 Enhanced VCP Pattern Detector with OBV Moving Average Integration
 Based on Mark Minervini's Trend Template + OBV 21-day MA Analysis
@@ -11,6 +10,13 @@ Enhanced Selection Criteria (40-Point System):
 4. Higher Lows Pattern - 3 points
 5. Volume Contracting - 6 points
 6. OBV Analysis - 14 points (OBV 21-day MA: 3pts + Accumulation: 3pts + Price Higher Lows: 3pts + OBV Higher High: 1pt + Price Divergence: 4pts)
+
+PLUS:
+- Extension / Late Breakout Filter (no score, hard filter):
+  * > +20% in last 10 days
+  * > +8% above 20-day MA
+  * Climactic wide-range bar on big volume in last 3 bars
+  * Breakout age > 1 day over 40-day pivot
 """
 
 import yfinance as yf
@@ -190,7 +196,6 @@ def check_obv_trend_analysis(daily_data):
         score += 3
     
     # 2. OBV Accumulation Signal (3 points)
-    # OBV rising faster than price (accumulation)
     obv_current = obv.iloc[-1]
     obv_21days_ago = obv.iloc[-21] if len(obv) >= 21 else obv_current
     price_current = daily_data['Close'].iloc[-1]
@@ -199,7 +204,6 @@ def check_obv_trend_analysis(daily_data):
     obv_change_pct = (obv_current - obv_21days_ago) / abs(obv_21days_ago) * 100 if obv_21days_ago != 0 else 0
     price_change_pct = (price_current - price_21days_ago) / price_21days_ago * 100 if price_21days_ago != 0 else 0
     
-    # Accumulation: OBV rising while price relatively stable or rising slower
     accumulation_signal = obv_change_pct > 0 and (obv_change_pct > price_change_pct or abs(price_change_pct) < 5)
     
     details['accumulation_signal'] = accumulation_signal
@@ -211,7 +215,6 @@ def check_obv_trend_analysis(daily_data):
         score += 3
     
     # 3. Price Higher Lows Pattern (3 points)
-    # Check for higher lows in price over multiple periods
     higher_lows_score = 0
     periods = [10, 20, 30]  # Check 10, 20, and 30-day periods
     
@@ -228,7 +231,6 @@ def check_obv_trend_analysis(daily_data):
             if higher_low:
                 higher_lows_score += 1
     
-    # Award 3 points if at least 2 out of 3 higher low patterns are confirmed
     price_higher_lows_confirmed = higher_lows_score >= 2
     details['price_higher_lows_confirmed'] = price_higher_lows_confirmed
     details['higher_lows_count'] = higher_lows_score
@@ -237,7 +239,6 @@ def check_obv_trend_analysis(daily_data):
         score += 3
     
     # 4. OBV Higher High Detection (1 point)
-    # Check if OBV makes higher high over 20-day period
     if len(obv) >= 40:
         current_obv_high = obv.iloc[-20:].max()  # Recent 20-day OBV high
         previous_obv_high = obv.iloc[-40:-20].max()  # Previous 20-day OBV high
@@ -250,10 +251,9 @@ def check_obv_trend_analysis(daily_data):
         if obv_higher_high:
             score += 1
             
-            # 5. Price Divergence Detection (2 points)
-            # If OBV makes higher high but price doesn't make higher high
-            current_price_high = daily_data['High'].iloc[-20:].max()  # Recent 20-day price high
-            previous_price_high = daily_data['High'].iloc[-40:-20].max()  # Previous 20-day price high
+            # 5. Price Divergence Detection (4 points)
+            current_price_high = daily_data['High'].iloc[-20:].max()
+            previous_price_high = daily_data['High'].iloc[-40:-20].max()
             
             price_higher_high = current_price_high > previous_price_high
             price_divergence = obv_higher_high and not price_higher_high
@@ -275,8 +275,6 @@ def check_obv_trend_analysis(daily_data):
     # 6. OBV Short-term vs Long-term MA alignment (informational only)
     obv_ma_alignment = obv_ma10.iloc[-1] > obv_ma21.iloc[-1] if len(obv_ma10) > 0 and len(obv_ma21) > 0 else False
     details['obv_ma_alignment'] = obv_ma_alignment
-    
-    # No bonus point for MA alignment (informational only)
     
     obv_analysis_confirmed = score >= 3
     return obv_analysis_confirmed, score, details
@@ -363,7 +361,6 @@ def check_trend_template(daily_data):
         score += 1
     
     # 10. Relative strength (simplified - price performance vs market)
-    # Using 3-month performance as proxy
     if len(daily_data) >= 63:
         price_3m_ago = daily_data['Close'].iloc[-63]
         price_performance = (latest['Close'] - price_3m_ago) / price_3m_ago * 100
@@ -378,8 +375,8 @@ def check_trend_template(daily_data):
     details['total_criteria'] = 10
     
     # UPDATED: Quantitative scoring - score equals criteria_met (1 point per rule)
-    score = criteria_met  # Each rule passed = 1 point (0-10 points possible)
-    trend_template_met = True  # Always continue analysis, no hard limit
+    score = criteria_met
+    trend_template_met = True  # always allow further analysis
     
     # Stage 2 identification (stricter criteria)
     stage2_criteria = 0
@@ -396,7 +393,6 @@ def check_trend_template(daily_data):
     if relative_strength_good:
         stage2_criteria += 1
     
-    # Stage 2 requires all 6 key criteria
     is_stage2 = stage2_criteria >= 6
     details['is_stage2'] = is_stage2
     details['stage2_criteria_met'] = stage2_criteria
@@ -447,21 +443,35 @@ def check_uptrend_nearing_breakout(daily_data, weekly_data):
     if below_daily_high:
         score += 1
     
-    # 5. Check if stock has already broken out in last 5 days using ATR (PENALTY)
-    # Use Average True Range to adapt to stock's volatility instead of fixed 5%
-    if len(daily_data) >= 20:  # Need enough data for ATR14
-        price_5_days_ago = daily_data['Close'].iloc[-6]  # 5 days ago (including today)
+    # 5. Graduated ATR-based recent breakout penalty
+    if len(daily_data) >= 20:
+        price_5_days_ago = daily_data['Close'].iloc[-6]
         price_change_5d = current_price - price_5_days_ago
         price_change_5d_pct = (price_change_5d / price_5_days_ago) * 100
         
-        # Get current ATR (14-day Average True Range)
         current_atr = daily_data['ATR14'].iloc[-1]
         atr_as_pct = (current_atr / current_price) * 100
         
-        # ATR-based breakout threshold: if 5-day move > 2x ATR, consider already broken out
-        # This adapts to each stock's volatility (high volatility stocks need bigger moves)
-        atr_breakout_threshold = 2.0 * current_atr
-        already_broken_out = price_change_5d > atr_breakout_threshold
+        atr_multiple = price_change_5d / current_atr if current_atr > 0 else 0
+        
+        penalty = 0
+        penalty_reason = "No penalty"
+        already_broken_out = False
+        
+        if atr_multiple >= 2.5:
+            penalty = min(score, 3)
+            penalty_reason = f"Strong breakout (≥2.5x ATR: {atr_multiple:.1f}x)"
+            already_broken_out = True
+        elif atr_multiple >= 2.0:
+            penalty = min(score, 2)
+            penalty_reason = f"Moderate breakout (2.0-2.5x ATR: {atr_multiple:.1f}x)"
+            already_broken_out = True
+        elif atr_multiple >= 1.5:
+            penalty = min(score, 1)
+            penalty_reason = f"Mild breakout (1.5-2.0x ATR: {atr_multiple:.1f}x)"
+            already_broken_out = True
+        
+        score -= penalty
         
         details['already_broken_out'] = already_broken_out
         details['price_5_days_ago'] = round(price_5_days_ago, 2)
@@ -469,22 +479,21 @@ def check_uptrend_nearing_breakout(daily_data, weekly_data):
         details['price_change_5d_abs'] = round(price_change_5d, 2)
         details['current_atr'] = round(current_atr, 2)
         details['atr_as_pct'] = round(atr_as_pct, 2)
-        details['atr_breakout_threshold'] = round(atr_breakout_threshold, 2)
-        details['atr_threshold_pct'] = round((atr_breakout_threshold / current_price) * 100, 2)
+        details['atr_multiple'] = round(atr_multiple, 2)
+        details['breakout_penalty'] = penalty
+        details['penalty_reason'] = penalty_reason
         
-        # Deduct points if already broken out (poor risk/reward)
-        if already_broken_out:
-            penalty = min(score, 3)  # Deduct up to 3 points, but not below 0
-            score -= penalty
-            details['breakout_penalty'] = penalty
-        else:
-            details['breakout_penalty'] = 0
+        details['atr_breakout_threshold'] = round(1.5 * current_atr, 2)
+        details['atr_threshold_pct'] = round((1.5 * current_atr / current_price) * 100, 2)
+        
     else:
         details['already_broken_out'] = False
         details['price_change_5d_pct'] = 0
         details['breakout_penalty'] = 0
         details['current_atr'] = 0
         details['atr_as_pct'] = 0
+        details['atr_multiple'] = 0
+        details['penalty_reason'] = "Insufficient data"
     
     breakout_ready = score >= 4
     return breakout_ready, score, details
@@ -511,7 +520,6 @@ def check_higher_lows(daily_data):
             if higher_low:
                 score += 1
     
-    # Need at least 2 out of 3 higher low patterns
     higher_lows_confirmed = score >= 2
     return higher_lows_confirmed, score, details
 
@@ -539,7 +547,6 @@ def check_volume_contracting(daily_data):
             if volume_contracting:
                 contracting_count += 1
     
-    # Need at least 3 out of 6 volume contraction signals
     volume_contracting_confirmed = contracting_count >= 3
     details['contracting_signals'] = contracting_count
     details['total_signals'] = len(periods)
@@ -548,6 +555,97 @@ def check_volume_contracting(daily_data):
         score = contracting_count
     
     return volume_contracting_confirmed, score, details
+
+# ==================== NEW: EXTENSION / LATE BREAKOUT FILTER ====================
+
+def add_extension_and_breakout_filters(daily_data, settings=None):
+    """
+    Mark late-stage / already-extended breakouts so we can drop them.
+
+    Rules (hard filter, no score):
+    1) > +20% in last 10 days      -> extended_roc
+    2) > +8% above 20-day MA       -> extended_ma20
+    3) Wide-range bar + big volume -> climactic_recent
+    4) Breakout age > 1 day above 40-day pivot -> extended_breakout_age
+    """
+    cfg = {
+        "roc_lookback": 10,
+        "roc_max": 0.20,           # 20% in 10 days
+        "ma_dist_max": 0.08,       # 8% above MA20
+        "wrb_atr_len": 20,
+        "wrb_mult": 2.0,           # TR > 2x ATR20
+        "vol_mult": 1.5,           # Volume > 1.5x 20d avg
+        "climactic_lookback": 3,   # treat last 3 bars as extended after WRB
+        "breakout_base_len": 40,   # pivot = 40-day high close
+        "breakout_buffer": 0.01,   # >1% over pivot = breakout
+        "breakout_max_age": 1      # only day 0–1 after breakout are allowed
+    }
+    if settings:
+        cfg.update(settings)
+
+    # 1) recent rate of change
+    lb = cfg["roc_lookback"]
+    daily_data[f"roc_{lb}d"] = daily_data["Close"].pct_change(lb)
+    daily_data["extended_roc"] = daily_data[f"roc_{lb}d"] > cfg["roc_max"]
+
+    # 2) distance from 20-day MA
+    daily_data["dist_ma20"] = (daily_data["Close"] - daily_data["MA20"]) / daily_data["MA20"]
+    daily_data["extended_ma20"] = daily_data["dist_ma20"] > cfg["ma_dist_max"]
+
+    # 3) climactic wide-range bar on big volume
+    daily_data["ATR20_ext"] = daily_data["TR"].rolling(cfg["wrb_atr_len"]).mean()
+    daily_data["wrb_mult"] = daily_data["TR"] / daily_data["ATR20_ext"]
+    daily_data["vol_mult_ext"] = daily_data["Volume"] / daily_data["Volume_MA20"]
+
+    daily_data["climactic_bar"] = (
+        (daily_data["wrb_mult"] > cfg["wrb_mult"]) &
+        (daily_data["vol_mult_ext"] > cfg["vol_mult"])
+    )
+    daily_data["climactic_recent"] = (
+        daily_data["climactic_bar"]
+        .rolling(cfg["climactic_lookback"])
+        .max()
+        .astype(bool)
+    )
+
+    # 4) breakout age above 40-day pivot
+    base_len = cfg["breakout_base_len"]
+    pivot = daily_data["Close"].rolling(base_len).max().shift(1)
+    broke_out = daily_data["Close"] > pivot * (1 + cfg["breakout_buffer"])
+
+    grp = (broke_out != broke_out.shift(1)).cumsum()
+    age = broke_out.groupby(grp).cumsum() - 1
+    daily_data["breakout_age"] = np.where(broke_out, age, np.nan)
+
+    latest = daily_data.iloc[-1]
+
+    extended_roc = bool(latest.get("extended_roc", False))
+    extended_ma20 = bool(latest.get("extended_ma20", False))
+    climactic_recent = bool(latest.get("climactic_recent", False))
+    breakout_age = latest.get("breakout_age", np.nan)
+    extended_breakout_age = (not pd.isna(breakout_age)) and (
+        breakout_age > cfg["breakout_max_age"]
+    )
+
+    is_extended = (
+        extended_roc
+        or extended_ma20
+        or climactic_recent
+        or extended_breakout_age
+    )
+
+    details = {
+        "extended_roc": extended_roc,
+        "extended_ma20": extended_ma20,
+        "climactic_recent": climactic_recent,
+        "breakout_age": float(breakout_age) if not pd.isna(breakout_age) else None,
+        "extended_breakout_age": extended_breakout_age,
+        "pass_filter": not is_extended,
+    }
+
+    return not is_extended, details, daily_data
+
+# ======================== MAIN SCAN LOGIC ========================
 
 def enhanced_vcp_obv_scan(symbol):
     """Enhanced VCP pattern detection with OBV analysis (40-point system)"""
@@ -561,40 +659,37 @@ def enhanced_vcp_obv_scan(symbol):
         daily_data, weekly_data = get_enhanced_stock_data_basic(symbol)
         if daily_data is None:
             return None
+
+        # NEW: remove extended / late-stage breakouts (FSM-type already-ran names)
+        extension_ok, extension_details, daily_data = add_extension_and_breakout_filters(daily_data)
+        if not extension_ok:
+            return None
         
-        # 1. Check Trend Template (0-10 points, quantitative)
+        # 1. Trend Template (0-10)
         trend_template_met, trend_score, trend_details = check_trend_template(daily_data)
-        # No hard limit - continue analysis regardless of trend score
         
-        # 2. Check Uptrend Nearing Breakout (7 points)
+        # 2. Uptrend Nearing Breakout (0-7)
         breakout_ready, breakout_score, breakout_details = check_uptrend_nearing_breakout(daily_data, weekly_data)
         
-        # 3. Check Higher Lows (3 points)
+        # 3. Higher Lows (0-3)
         higher_lows_ok, higher_lows_score, higher_lows_details = check_higher_lows(daily_data)
         
-        # 4. Check Volume Contracting (6 points)
+        # 4. Volume Contracting (0-6)
         volume_contracting_ok, volume_score, volume_details = check_volume_contracting(daily_data)
         
-        # Calculate preliminary score (without OBV)
         preliminary_score = trend_score + breakout_score + higher_lows_score + volume_score
         
-        # 5. Check OBV Analysis (10 points) - MOVED TO LAST for performance
-        # Only calculate OBV if preliminary score shows promise
-        if preliminary_score >= 15:  # Only if other criteria look good
-            # Add OBV calculations to data
+        # 5. OBV Analysis (0-14), only if promising
+        if preliminary_score >= 15:
             daily_data = add_obv_calculations(daily_data)
             obv_confirmed, obv_score, obv_details = check_obv_trend_analysis(daily_data)
         else:
-            # Skip expensive OBV calculations
             obv_confirmed, obv_score, obv_details = False, 0, {}
         
-        # Calculate total score (40-point system)
         total_score = trend_score + breakout_score + higher_lows_score + volume_score + obv_score
         
-        # Check if stock is in Stage 2
         is_stage2 = trend_details.get('is_stage2', False)
         
-        # Determine VCP category with OBV enhancement
         if is_stage2 and total_score >= 29:
             vcp_category = "🚀 Stage2 & VCP+OBV"
         elif is_stage2 and total_score >= 26:
@@ -606,7 +701,6 @@ def enhanced_vcp_obv_scan(symbol):
         else:
             vcp_category = "📋 low score stock"
         
-        # Build result
         result = {
             "symbol": symbol,
             "market_cap": market_cap,
@@ -635,7 +729,8 @@ def enhanced_vcp_obv_scan(symbol):
                 "breakout": breakout_details,
                 "higher_lows": higher_lows_details,
                 "volume": volume_details,
-                "obv_analysis": obv_details
+                "obv_analysis": obv_details,
+                "extension_filter": extension_details,  # NEW
             }
         }
         
@@ -693,14 +788,12 @@ def main():
     
     for i, symbol in enumerate(symbols):
         try:
-            # Check for interrupt signal
             if scan_interrupted:
                 print(f"\n🛑 扫描已中断! 已处理 {processed} 个股票")
                 print(f"   - 发现模式: {len(results)}")
                 print(f"   - 将显示已处理的结果...")
                 break
             
-            # Progress display
             if (i + 1) % 25 == 0 or (i + 1) == len(symbols):
                 elapsed = (datetime.now() - start_time).total_seconds()
                 rate = (i + 1) / elapsed if elapsed > 0 else 0
@@ -709,42 +802,33 @@ def main():
                       f"发现VCP+OBV: {len(results)} | 错误: {errors} | "
                       f"预计剩余: {eta/60:.1f}分钟")
             
-            # Full analysis
             result = enhanced_vcp_obv_scan(symbol)
             processed += 1
             
             if result and result['total_score'] >= min_score:
                 results.append(result)
                 
-                # Only display "优秀增强" (excellent enhanced) patterns during execution
                 category = result['vcp_category']
                 score = result['total_score']
                 
-                # Filter to only show excellent enhanced patterns (25+ points or Stage2优秀)
-                show_pattern = False
-                if score >= 21:
-                    show_pattern = True
+                show_pattern = score >= 21
                 
                 if show_pattern:
                     price = result['current_price']
                     change = result['price_change_pct']
                     market_cap_b = result['market_cap_billions']
                     
-                    # Get criteria details
                     scores = result['component_scores']
                     details = result['analysis_details']
                     
-                    # Check if this is a Stage 2 stock
                     is_stage2 = details['trend_template'].get('is_stage2', False)
                     stage2_indicator = " [Stage2+OBV]" if is_stage2 else ""
                     
                     print(f"\n{category}: {symbol} | 总分:{score}/40 | ${price} ({change:+.1f}%) | 市值${market_cap_b:.1f}B{stage2_indicator}")
                     
-                    # Show detailed breakdown only for high-scoring stocks (28+ points)
                     if score >= 28:
                         print(f"   📊 评分详情: 趋势{scores['trend_score']}/10 + 突破{scores['breakout_score']}/7 + 低点{scores['higher_lows_score']}/3 + 成交量{scores['volume_score']}/6 + OBV{scores['obv_score']}/14")
                         
-                        # OBV Analysis Details
                         obv_details = details['obv_analysis']
                         obv_status = []
                         obv_status.append("✅OBV21日MA上升" if obv_details.get('obv_ma21_trending_up') else "❌OBV21日MA上升")
@@ -754,19 +838,17 @@ def main():
                         obv_status.append("✅价格背离" if obv_details.get('price_divergence') else "❌OBV & price bullish diveragence")
                         print(f"   📊 OBV分析({scores['obv_score']}/14): {' '.join(obv_status)} | OBV变化:{obv_details.get('obv_change_21d_pct', 0):.1f}% vs 价格:{obv_details.get('price_change_21d_pct', 0):.1f}%")
             
-            time.sleep(0.1)  # Rate limiting
+            time.sleep(0.1)
             
         except Exception as e:
             errors += 1
             if errors <= 10:
                 print(f"❌ {symbol} 分析失败: {e}")
     
-    # Sort results by score
     results.sort(key=lambda x: x['total_score'], reverse=True)
     
     total_time = (datetime.now() - start_time).total_seconds()
     
-    # Display results summary
     status = "中断" if scan_interrupted else "完成"
     print(f"\n📊 扫描{status}统计:")
     print(f"   - 处理股票: {processed}")
@@ -778,7 +860,6 @@ def main():
     if scan_interrupted:
         print(f"   - 剩余未处理: {len(symbols) - processed} 个股票")
     
-    # Display final results
     if results:
         print(f"\n🏆 发现的增强VCP+OBV模式 (按评分排序):")
         print("=" * 90)
